@@ -1,0 +1,36 @@
+
+	O sistema SUM, como sabemos, será operado por um operador que terá como responsabilidade observar possíveis casos de roubos a carros. A decisão final sobre a possibilidade de ser um roubo real ou não, cabe ao operador, que terá apoio do sistema para chegar a conclusão final.
+	
+	Como o estacionamento da Universidade de Brasília - Campus Gama recebe um número muito grande de carros, é impossível responsabilizar apenas um operador para observar todos os carros ao mesmo tempo, verificando as possibilidades de possíveis roubos ocorrendo, inclusive, em paralelo.
+	
+	Para solucionar este problema, o sistema SUM apoiará o operador na escolha de casos suspeitos a serem observados. Ou seja, o sistema apresentará ao operador todos os casos de possíveis roubos ocorrendo no momento, especificando os casos mais importantes e menos importantes.
+	
+	Utilizando o sistema, o operador saberá exatamente quais imagens merecem atenção e até quais imagens merecem mais atenção que outras imagens, dependendo da quantificação do risco, que é feita pelo sistema. Esta quantificação é feita a partir da observação de critérios que identifiquem um possível caso de roubo a carro. 
+
+\subsubsection{Quantificação do Risco}
+
+	Com o objetivo de selecionar as imagens mais importantes a serem analisadas pelo operador, o sistema SUM deverá realizar uma quantificação de critérios que levem a definição de um possível caso de roubo a carro. Estes critérios foram obtidos após a análise de inúmeras imagens que registraram casos de roubo a carros em estacionamentos universitários.
+	
+	Os critérios possuem pesos para quantificação, dependendo do quão crítico é o critério analisado. A ponderação dos critérios pode ser observada na tabela a seguir:
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\rowcolor[HTML]{C0C0C0} 
+			{\color[HTML]{00009B} \textbf{Critérios}}                                   & {\color[HTML]{00009B} \textbf{Descrição}}                                                                                                    & {\color[HTML]{00009B} \textbf{Peso}} \\ \hline
+			Proximidade                                                                 & \begin{tabular}[c]{@{}c@{}}Distância de 2m, ou menos, \\ entre um suspeito e o carro \\ analisado.\end{tabular}                              & 1                                    \\ \hline
+			\begin{tabular}[c]{@{}c@{}}Permanência próximo \\ ao carro.\end{tabular}    & \begin{tabular}[c]{@{}c@{}}Tempo em que o suspeito \\ permanece ao lado do carro \\ analisado ultrapassa os 30 segundos.\end{tabular}        & 2                                    \\ \hline
+			\begin{tabular}[c]{@{}c@{}}Contato físico com a \\ porta.\end{tabular}      & \begin{tabular}[c]{@{}c@{}}O suspeito mantem contato físico com \\ a porta por mais de 10 segundos.\end{tabular}                             & 3                                    \\ \hline
+			\begin{tabular}[c]{@{}c@{}}Contato físico com o \\ Porta-Malas\end{tabular} & \begin{tabular}[c]{@{}c@{}}O suspeito mantem contato físico com o \\ porta-malas do carro analisado por mais de \\ 20 segundos.\end{tabular} & 3                                    \\ \hline
+			Alarme                                                                      & O alarme do carro analisado está disparando.                                                                                                 & 5                                    \\ \hline
+		\end{tabular}
+		\caption{Identificação dos Critérios de Risco}
+		\label{tab:criteriosRisco}
+\end{table}
+
+	Em momento algum o sistema chegará a conclusão de que é um roubo em execução ou não, ele apenas apontará imagens que se enquadram em um possível caso de roubo a carros. A identificação das imagens mais importantes será feita a partir da geração de um Ranking de possíveis casos. Este Ranking será gerado a partir da somatória dos critérios identificados em cada caso.
+	
+	O Ranking de imagens será apresentado ao operador na forma de um “mosaico” de imagens, que receberão tons de amarelo a vermelho, dependendo de sua importância no momento. O operador poderá selecionar a imagem para poder controlar a câmera e visualizar a imagem da forma que desejar, verificando se o caso se refere a um caso de roubo ou apenas um engano.
+	
+	Para captação destes critérios, o sistema deverá possuir sensores de calor e proximidade, alem das imagens obtidas pelas câmeras.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.19)  21 OCT 2015 16:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.19)  29 OCT 2015 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -860,6 +860,31 @@ Package color Info: Driver file: pdftex.def on input line 130.
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count169
 ))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks27
+\minrowclearance=\skip199
+)
+LaTeX Info: Redefining \color on input line 702.
+\rownum=\count170
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -879,10 +904,10 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count170
-\float@exts=\toks27
+\c@float@type=\count171
+\float@exts=\toks28
 \float@box=\box30
-\@float@everytoks=\toks28
+\@float@everytoks=\toks29
 \@floatcapt=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/units/units.sty
@@ -890,9 +915,9 @@ Package: units 1998/08/04 v0.9b Typesetting units
 
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip199
-\L@UnitsRaiseTextstyle=\skip200
-\L@UnitsRaiseScriptstyle=\skip201
+\L@UnitsRaiseDisplaystyle=\skip200
+\L@UnitsRaiseTextstyle=\skip201
+\L@UnitsRaiseScriptstyle=\skip202
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2012/07/25 v1.38 Bibliographical back referencing
@@ -901,18 +926,18 @@ Package: backref 2012/07/25 v1.38 Bibliographical back referencing
 Package: abntex2cite 2014/01/26 v1.9.2 abnTeX2
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip202
-\ABCIauxlen=\skip203
-\c@ABCIaux=\count171
-\c@ABCImax=\count172
+\minimumbiblabelwidth=\skip203
+\ABCIauxlen=\skip204
+\c@ABCIaux=\count172
+\c@ABCImax=\count173
 
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip204
+\biblabelsep=\skip205
 LaTeX Info: Redefining \newblock on input line 675.
 LaTeX Info: Redefining \cite on input line 702.
-\ABCItoken=\toks29
+\ABCItoken=\toks30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/bold-extra/bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
@@ -928,7 +953,7 @@ Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip205
+\@mathmargin=\skip206
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -936,7 +961,7 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks30
+\@emptytoks=\toks31
 \ex@=\dimen159
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -946,13 +971,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count173
+\inf@bad=\count174
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count174
-\leftroot@=\count175
+\uproot@=\count175
+\leftroot@=\count176
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count176
-\DOTSCASE@=\count177
+\classnum@=\count177
+\DOTSCASE@=\count178
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -961,34 +986,34 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen161
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count178
-\c@MaxMatrixCols=\count179
+\macc@depth=\count179
+\c@MaxMatrixCols=\count180
 \dotsspace@=\muskip11
-\c@parentequation=\count180
-\dspbrk@lvl=\count181
-\tag@help=\toks31
-\row@=\count182
-\column@=\count183
-\maxfields@=\count184
-\andhelp@=\toks32
+\c@parentequation=\count181
+\dspbrk@lvl=\count182
+\tag@help=\toks32
+\row@=\count183
+\column@=\count184
+\maxfields@=\count185
+\andhelp@=\toks33
 \eqnshift@=\dimen162
 \alignsep@=\dimen163
 \tagshift@=\dimen164
 \tagwidth@=\dimen165
 \totwidth@=\dimen166
 \lineht@=\dimen167
-\@envbody=\toks33
-\multlinegap=\skip206
-\multlinetaggap=\skip207
-\mathdisplay@stack=\toks34
+\@envbody=\toks34
+\multlinegap=\skip207
+\multlinetaggap=\skip208
+\mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count185
+\g_MT_multlinerow_int=\count186
 \l_MT_multwidth_dim=\dimen168
-\origjot=\skip208
+\origjot=\skip209
 \l_MT_shortvdotswithinadjustabove_dim=\dimen169
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen170
 \l_MT_above_intertext_sep=\dimen171
@@ -1020,18 +1045,18 @@ Package: l3seq 2013/12/14 v4623 L3 Sequences and stacks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3int.sty
 Package: l3int 2013/08/02 v4583 L3 Integers
-\c_max_int=\count186
-\l_tmpa_int=\count187
-\l_tmpb_int=\count188
-\g_tmpa_int=\count189
-\g_tmpb_int=\count190
+\c_max_int=\count187
+\l_tmpa_int=\count188
+\l_tmpb_int=\count189
+\g_tmpa_int=\count190
+\g_tmpb_int=\count191
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3quark.sty
 Package: l3quark 2013/12/14 v4623 L3 Quarks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3prg.sty
 Package: l3prg 2014/01/04 v4642 L3 Control structures
-\g__prg_map_int=\count191
+\g__prg_map_int=\count192
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3clist.sty
 Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
@@ -1047,11 +1072,12 @@ Package: l3msg 2013/07/28 v4581 L3 Messages
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3file.sty
 Package: l3file 2013/10/13 v4596 L3 File and I/O operations
-\l_iow_line_count_int=\count192
-\l__iow_target_count_int=\count193
-\l__iow_current_line_int=\count194
-\l__iow_current_word_int=\count195
-\l__iow_current_indentation_int=\count196
+\l_iow_line_count_int=\count193
+\l__iow_target_count_int=\count194
+\l__iow_current_line_int=\count195
+\l__iow_current_word_int=\count196
+Normal \count register pool exhausted, switching to extended pool.
+\l__iow_current_indentation_int=\count277
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3skip.sty
 Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
@@ -1077,21 +1103,20 @@ Normal \skip register pool exhausted, switching to extended pool.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3keys.sty
 Package: l3keys 2013/12/08 v4614 L3 Experimental key-value interfaces
-Normal \count register pool exhausted, switching to extended pool.
-\g__keyval_level_int=\count277
-\l_keys_choice_int=\count278
+\g__keyval_level_int=\count278
+\l_keys_choice_int=\count279
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3fp.sty
 Package: l3fp 2014/01/04 v4642 L3 Floating points
-\c__fp_leading_shift_int=\count279
-\c__fp_middle_shift_int=\count280
-\c__fp_trailing_shift_int=\count281
-\c__fp_big_leading_shift_int=\count282
-\c__fp_big_middle_shift_int=\count283
-\c__fp_big_trailing_shift_int=\count284
-\c__fp_Bigg_leading_shift_int=\count285
-\c__fp_Bigg_middle_shift_int=\count286
-\c__fp_Bigg_trailing_shift_int=\count287
+\c__fp_leading_shift_int=\count280
+\c__fp_middle_shift_int=\count281
+\c__fp_trailing_shift_int=\count282
+\c__fp_big_leading_shift_int=\count283
+\c__fp_big_middle_shift_int=\count284
+\c__fp_big_trailing_shift_int=\count285
+\c__fp_Bigg_leading_shift_int=\count286
+\c__fp_Bigg_middle_shift_int=\count287
+\c__fp_Bigg_trailing_shift_int=\count288
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3box.sty
 Package: l3box 2013/07/28 v4581 L3 Experimental boxes
@@ -1128,8 +1153,8 @@ Package: l3color 2012/08/29 v4156 L3 Experimental color support
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3luatex.sty
 Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
-\g__cctab_allocate_int=\count288
-\g__cctab_stack_int=\count289
+\g__cctab_allocate_int=\count289
+\g__cctab_stack_int=\count290
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3candidates.sty
 Package: l3candidates 2014/01/06 v4643 L3 Experimental additions to l3kernel
@@ -1153,11 +1178,11 @@ Normal \dimen register pool exhausted, switching to extended pool.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2013/12/31 v4634 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count290
-\l__xparse_m_args_int=\count291
-\l__xparse_mandatory_args_int=\count292
-\l__xparse_processor_int=\count293
-\l__xparse_v_nesting_int=\count294
+\l__xparse_current_arg_int=\count291
+\l__xparse_m_args_int=\count292
+\l__xparse_mandatory_args_int=\count293
+\l__xparse_processor_int=\count294
+\l__xparse_v_nesting_int=\count295
 )
 Package: siunitx 2013/07/31 v2.5s A comprehensive (SI) units package
 
@@ -1167,30 +1192,30 @@ Package: l3keys2e 2013/12/31 v4634 LaTeX2e option processing using LaTeX3 keys
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
 \l__siunitx_tmp_box=\box49
 \l__siunitx_tmp_dim=\dimen265
-\l__siunitx_tmp_int=\count295
+\l__siunitx_tmp_int=\count296
 Variant \prop_get:NVNT already defined; not changing it on line 371
 Variant \prop_get:NVNF already defined; not changing it on line 372
 Variant \prop_get:NVNTF already defined; not changing it on line 373
-\l__siunitx_number_mantissa_length_int=\count296
-\l__siunitx_number_uncert_length_int=\count297
-\l__siunitx_round_int=\count298
-\l__siunitx_process_decimal_int=\count299
-\l__siunitx_process_uncertainty_int=\count300
-\l__siunitx_process_fixed_int=\count301
-\l__siunitx_process_integer_min_int=\count302
-\l__siunitx_process_precision_int=\count303
-\l__siunitx_group_min_int=\count304
+\l__siunitx_number_mantissa_length_int=\count297
+\l__siunitx_number_uncert_length_int=\count298
+\l__siunitx_round_int=\count299
+\l__siunitx_process_decimal_int=\count300
+\l__siunitx_process_uncertainty_int=\count301
+\l__siunitx_process_fixed_int=\count302
+\l__siunitx_process_integer_min_int=\count303
+\l__siunitx_process_precision_int=\count304
+\l__siunitx_group_min_int=\count305
 \l__siunitx_angle_marker_box=\box50
 \l__siunitx_angle_unit_box=\box51
 \l__siunitx_angle_marker_dim=\dimen266
 \l__siunitx_angle_unit_dim=\dimen267
-\l__siunitx_unit_int=\count305
-\l__siunitx_unit_denominator_int=\count306
-\l__siunitx_unit_numerator_int=\count307
-\l__siunitx_unit_prefix_int=\count308
-\l__siunitx_unit_prefix_base_int=\count309
-\l__siunitx_unit_prefix_gram_int=\count310
-\l__siunitx_number_product_int=\count311
+\l__siunitx_unit_int=\count306
+\l__siunitx_unit_denominator_int=\count307
+\l__siunitx_unit_numerator_int=\count308
+\l__siunitx_unit_prefix_int=\count309
+\l__siunitx_unit_prefix_base_int=\count310
+\l__siunitx_unit_prefix_gram_int=\count311
+\l__siunitx_number_product_int=\count312
 \c__siunitx_one_fill_skip=\skip262
 \l__siunitx_table_unit_align_skip=\skip263
 \l__siunitx_table_exponent_dim=\dimen268
@@ -1347,14 +1372,14 @@ Package: translator 2010/06/12 ver 1.10
 (/usr/share/texmf/tex/latex/beamer/base/translator/translator-language-mappings
 .tex))) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count312
+\c@tracingmulticols=\count313
 \mult@box=\box56
 \multicol@leftmargin=\dimen277
-\c@unbalance=\count313
-\c@collectmore=\count314
-\doublecol@number=\count315
-\multicoltolerance=\count316
-\multicolpretolerance=\count317
+\c@unbalance=\count314
+\c@collectmore=\count315
+\doublecol@number=\count316
+\multicoltolerance=\count317
+\multicolpretolerance=\count318
 \full@width=\dimen278
 \page@free=\dimen279
 \premulticols=\dimen280
@@ -1384,44 +1409,19 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box77
 \@tempa=\box78
 \@tempa=\box79
-\c@columnbadness=\count318
-\c@finalcolumnbadness=\count319
+\c@columnbadness=\count319
+\c@finalcolumnbadness=\count320
 \last@try=\dimen282
 \multicolovershoot=\dimen283
 \multicolundershoot=\dimen284
 \mult@nat@firstbox=\box80
 \colbreak@box=\box81
-\multicol@sort@counter=\count320
+\multicol@sort@counter=\count321
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count321
+\c@lips@count=\count322
 ))
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks35
-\minrowclearance=\skip268
-)
-LaTeX Info: Redefining \color on input line 702.
-\rownum=\count322
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-)
 (./fixos/comandos.tex) (./fixos/novosComandos.tex) (./editaveis/informacoes.tex
 ) (./fixos/informacoes.tex) (./fixos/setup.tex
 Package hyperref Info: Option `colorlinks' set `true' on input line 16.
@@ -1482,7 +1482,7 @@ Package frenchb.ldf Warning: The definition of \@makecaption has been changed,
 LaTeX Info: Redefining \dots on input line 8.
 LaTeX Info: Redefining \up on input line 8.
 \myptabbox=\box83
-\myptabboxwidth=\skip269
+\myptabboxwidth=\skip268
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
@@ -1706,15 +1706,35 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] (./editaveis/desenvolvimento.tex
 (./editaveis/propostaSolucao.tex) (./editaveis/sistemaAereo.tex)
-(./editaveis/estacaoSolo.tex) (./editaveis/eletronicaEmbarcada.tex)
-(./editaveis/consumoEnergetico.tex) (./editaveis/integracaoSolucao.tex))
-[7
+(./editaveis/estacaoSolo.tex (./editaveis/estruturaEstacao.tex
+<figuras/estacaoSolo.png, id=105, 538.01pt x 303.1325pt>
+File: figuras/estacaoSolo.png Graphic file (type png)
 
-] (./editaveis/conclusoes.tex)) (./tcc.bbl (./tcc.brf)
+<use figuras/estacaoSolo.png>
+Package pdftex.def Info: figuras/estacaoSolo.png used on input line 6.
+(pdftex.def)             Requested size: 273.00278pt x 153.81845pt.
+) (./editaveis/identificacaoRisco.tex [7
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.9 
+     <./figuras/estacaoSolo.png>] [8pdfTeX warning (ext4): destination with the
+ same identifier (name{table.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.36 	P
+       ara captação destes critérios, o sistema deverá possuir sensores ...
+])) (./editaveis/eletronicaEmbarcada.tex) (./editaveis/consumoEnergetico.tex)
+(./editaveis/integracaoSolucao.tex)) [9] (./editaveis/conclusoes.tex))
+(./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [8
+ [10
 
 ]
 bibitemlist
@@ -1725,7 +1745,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 8.
 No file tcc.ind.
 
 AED: lastpage setting LastPage
-[9
+[11
 
 ]
 \tf@lof=\write6
@@ -1751,22 +1771,23 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 22252 strings out of 493304
- 398056 string characters out of 6139871
- 571485 words of memory out of 5000000
- 25202 multiletter control sequences out of 15000+600000
- 79452 words of font info for 60 fonts, out of 8000000 for 9000
+ 22295 strings out of 493304
+ 398832 string characters out of 6139871
+ 572799 words of memory out of 5000000
+ 25229 multiletter control sequences out of 15000+600000
+ 82222 words of font info for 61 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,13n,38p,10445b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,16n,38p,10445b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on tcc.pdf (10 pages, 271520 bytes).
+lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ssbx10.pfb>
+Output written on tcc.pdf (12 pages, 617427 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
