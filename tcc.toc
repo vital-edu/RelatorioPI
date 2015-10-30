@@ -20,13 +20,18 @@
 \contentsline {section}{\numberline {2.3}Subprojeto da Esta\IeC {\c c}\IeC {\~a}o de Solo}{19}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Estrutura}{19}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Armazenamento}{19}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Identifica\IeC {\c c}\IeC {\~a}o de Risco}{21}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Quantifica\IeC {\c c}\IeC {\~a}o do Risco}{22}{subsubsection.2.3.3.1}
-\contentsline {section}{\numberline {2.4}Subprojeto da Eletr\IeC {\^o}nica Embarcada}{23}{section.2.4}
-\contentsline {section}{\numberline {2.5}Consumo Energ\IeC {\'e}tico}{23}{section.2.5}
-\contentsline {section}{\numberline {2.6}Integra\IeC {\c c}\IeC {\~a}o da Solu\IeC {\c c}\IeC {\~a}o}{23}{section.2.6}
+\contentsline {subsection}{\numberline {2.3.3}Sistema de comunica\IeC {\c c}\IeC {\~a}o Esta\IeC {\c c}\IeC {\~a}o solo - Vigilante seguran\IeC {\c c}a}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Processamento dos dados}{22}{subsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.4.1}Redund\IeC {\^a}ncia de software}{22}{subsubsection.2.3.4.1}
+\contentsline {paragraph}{\numberline {2.3.4.1.1}Diversidade}{22}{paragraph.2.3.4.1.1}
+\contentsline {paragraph}{\numberline {2.3.4.1.2}Blocos de recupera\IeC {\c c}\IeC {\~a}o}{23}{paragraph.2.3.4.1.2}
+\contentsline {subsection}{\numberline {2.3.5}Identifica\IeC {\c c}\IeC {\~a}o de Risco}{23}{subsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.5.1}Quantifica\IeC {\c c}\IeC {\~a}o do Risco}{24}{subsubsection.2.3.5.1}
+\contentsline {section}{\numberline {2.4}Subprojeto da Eletr\IeC {\^o}nica Embarcada}{25}{section.2.4}
+\contentsline {section}{\numberline {2.5}Consumo Energ\IeC {\'e}tico}{25}{section.2.5}
+\contentsline {section}{\numberline {2.6}Integra\IeC {\c c}\IeC {\~a}o da Solu\IeC {\c c}\IeC {\~a}o}{25}{section.2.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Conclus\IeC {\~o}es}}{24}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Conclus\IeC {\~o}es}}{26}{chapter.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{25}{section*.4}
+\contentsline {chapter}{Refer\^encias}{27}{section*.4}
