@@ -42,9 +42,6 @@ Dessa maneira, baseando-se nos dados coletados e avaliando os riscos nos quais o
 
 % section Objetivos (end)
 
-\section{Detalhamento do Problema} % (fold)
-\label{sec:detalhamentoProblema}
-
 \section{Definição do Escopo} % (fold)
 \label{sec:defini_o_do_escopo}
 
@@ -80,8 +77,149 @@ Dessa maneira, baseando-se nos dados coletados e avaliando os riscos nos quais o
 
 \section{Metodologia de Gerenciamento de Projeto} % (fold)
 
+  Para início do projeto, foi elaborada uma análise de requisitos a partir de um documento de visão. O documento de visão desenvolvido fez o uso do diagrama de espinha de peixe para elencar as principais causas da insegurança do campus, definindo em seguida os requisitos a serem trabalhados para a elaboração de uma Estrutura Análitica do Projeto (EAP).
+
+  Para a realização do desenvolvimento do projeto SUM, foi necessário estruturar uma metodologia de trabalho em que todos os integrantes do grupo possam interagir e apresentar resultados de maneira rápida e eficaz. E a metodologia que mais se adequa à dinâmica do projeto é o SCRUM.
+
+  O SCRUM é uma metodologia ágil para gestão de projetos na área de software, que, no contexto da disciplina de Projeto Integrador 1, foi adaptado para o gerenciamento de projetos de engenharia.
+  No SCRUM, as funcionalidades do produto são organizadas em dois artefatos, o backlog de produto e o backlog da sprint. O backlog do produto possui uma visão mais abrangente da funcionalidade, enquanto que no backlog da sprint, essas funcionalidades são refinadas e melhor descritas.
+
+  Os seguintes itens do backlog do SUM foram planejados:
+
+  \begin{itemize}
+    \item Monitoramento aéreo do estacionamento da FGA.
+    \item Facilidade de instalação e manutenção.
+    \item Identificação de problemas de funcionamento interno.
+    \item Transmissão de dados para estação em solo.
+    \item Identificação de atividade suspeita por meio de inteligência artificial.
+    \item Emissão de alerta de atividade suspeita quando identificada.
+    \item Armazenamento de dados coletados por grandes períodos.
+    \item Capacidade de funcionamento temporário quando houver falha de alimentação  energética.
+    \item Garantia de cobertura do monitoramento de toda a área do estacionamento.
+    \item Capacidade de controlar altura em relação ao solo.
+\end{itemize}
+
+  O backlog de produto será refinado durante as sprints, a fim de cumprir as expectativas dos pontos de controle definidos na disciplina de Projeto Integrador 1. Nesse sentido, cada ponto de controle será contemplado por duas sprints: a primeira sprint cobrirá metade dos itens do backlog de produto com o enfoco necessário para o Ponto de Controle 1; e a segunda sprint, cobrirá o restante dos itens do backlog de produto.
+
+  A tabela \ref{tab:enfoque_pc} delimita o enfoco de cada ponto de controle:
+
+  \begin{table}[H]
+  \centering
+  \begin{tabular}{|p{4cm}|p{12cm}|}
+  \hline
+  Ponto de Controle & Enfoque                                                                                      \\ \hline
+  1                 & Definir o escopo dos itens do \textit{Backlog} de produto , realizar revisão bibliográfica \\ \hline
+  2                 & Refinar soluções técnicas, modelagem da solução                                              \\ \hline
+  3                 & Análise de viabilidade econômica                                                             \\ \hline
+  \end{tabular}
+  \caption{Enfoque por ponto de controle}
+  \label{tab:enfoque_pc}
+  \end{table}
+
+  Os integrantes do grupo escolheram as áreas que melhor se identificaram para desenvolver as pesquisas ao longo do semestre. Dentre estes, dois foram designados gerentes gerais e outros cinco subgerentes das grandes áreas de pesquisa.
+
+  !!!!!!!!!!!!!!!!!!! imagem
+
+  A dinâmica entre os gerentes e os subgerentes foi desenvolvida de maneira com que todas as partes estejam integradas. Alguns requisitos foram estabelecidos para melhor comunicação entre todos os integrantes do projeto:
+
+  \begin{itemize}
+    \item Todas as demandas de grupo deverão ser discutidas nas reuniões em horários de aula com a presença de todos os integrantes do grupo.
+    \item As avaliações serão individuais: com o auxílio de uma planilha, os subgerentes deverão avaliar os integrantes do grupo, bem como a gerência geral.
+    \item A gerência geral deverá avaliar todos os integrantes do projeto.
+    \item Reuniões semanais, além das reuniões em horários de aula,com a presença de todos ou apenas subgerência, com frequência mínima de uma por semana.
+    \item Cada subgerente terá a liberdade de desenvolver a dinâmica de grupo que melhor se adequar às necessidades da pesquisa. Contudo, a dinâmica de projeto será a mesma.
+    \item As avaliações individuais supracitadas serão feitas ao final de cada etapa, ponto de controle, e serão avaliados:
+    \item Pontualidade na entrega de atividades: é importante para manter os prazos de entrega da disciplina e para não sobrecarregar outros integrantes.
+    \item Assiduidade nas reuniões: é importante que todos os integrantes estejam presentes nas reuniões estabelecidas, pois a interação destes com o conteúdo discutido é fator sine qua non para a melhor qualidade das pesquisas e compreensão das dificuldades do projeto.
+    \item Conteúdo da pesquisa: fontes bibliográficas confiáveis, concordância no desenvolvimento do tópico.
+  \end{itemize}
+
+\section{Cronograma}
+
+As atividades para desenvolvimento do projeto SUM, do grupo 1, da disciplina Projeto Integrador 1 deverão ser divididas em etapas, que serão avaliadas nos pontos de controle um, dois e três.
+
+Os cronogramas a seguir apresentam como serão organizadas e direcionadas  as tarefas e atividades para elaboração de relatórios para apresentação nos pontos de controle da disciplina. As atividades serão desenvolvidas durante o semestre (tabelas \ref{tab:cronograma1}, \ref{tab:cronograma2} e \ref{tab:cronograma3}) com a organização datada nos mesmos.
+
+Ao início de cada Ponto de Controle, todos os integrantes devem elaborar uma revisão bibliográfica, ou complementar a anterior, sobre o novo conteúdo a ser desenvolvido e avaliado pelos professores da disciplina. O prazo para a sua elaboração será, sempre que possível, no período de quatro dias. E, com as informações coletadas, seguem as atividades propostas para a elaboração do relatório.
+
+Na quinta-feira anterior ao dia de apresentação do Ponto de Controle, o relatório preliminar deverá ser entregue ao professor orientador para uma revisão geral. Após as correções feitas pelos anos,  o relatório poderá  ser entregue via \textit{Moodle}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|}
+\hline
+\multicolumn{16}{|c|}{Primeiro ponto de controle}                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+Atividades                     & \scalebox{.7}{21/09}                     & \scalebox{.7}{22/09}                     & \scalebox{.7}{23/09}                     & \scalebox{.7}{24/09}                     & \scalebox{.7}{25/09}                     & \scalebox{.7}{26/09}                     & \scalebox{.7}{27/09}                     & \scalebox{.7}{28/09}                     & \scalebox{.7}{29/09}                     & \scalebox{.7}{30/09}                     & \scalebox{.7}{01/10}                     & \scalebox{.7}{02/10}                     & \scalebox{.7}{03/10} & \scalebox{.7}{04/10} & \scalebox{.7}{05/10}                     \\ \hline
+Revisão bibliográfica          & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &                           &                           &                           &                           &       &       &                           \\ \hline
+Definição escopo               &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &                           &                           &                           &       &       &                           \\ \hline
+Revisão 1.0                    &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &                           &                           &                           &       &       &                           \\ \hline
+Latex                          &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &                           &       &       &                           \\ \hline
+Apresentação 1.0               &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &       &       &                           \\ \hline
+Revisão 2.0                    &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           &       &       &                           \\ \hline
+Revisão professor              &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &       &       &                           \\ \hline
+Revisão 3.0                    &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X &       &       &                           \\ \hline
+Apresentação ponto de controle &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &       &       & \cellcolor[HTML]{3166FF}X \\ \hline
+\end{tabular}
+\caption{Cronograma de atividades até o primeiro Ponto de Controle de PI 1.}
+\label{tab:cronograma1}
+\end{table}
+
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|}
+    \hline
+    \multicolumn{16}{|c|}{Segundo ponto de controle}                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+    Atividades                                                      & \scalebox{.7}{12/10}                     & \scalebox{.7}{13/10}                     & \scalebox{.7}{14/10}                     & \scalebox{.7}{15/10}                     & \scalebox{.7}{16/10}                     & \scalebox{.7}{17/10}                     & \scalebox{.7}{18/10}                     & \scalebox{.7}{19/10}                     & \scalebox{.7}{20/10}                     & \scalebox{.7}{21/10}                     & \scalebox{.7}{22/10}                     & \scalebox{.7}{23/10}                     & \scalebox{.7}{29/10}                     & \scalebox{.7}{30/10}                     & \scalebox{.7}{04/11}                     \\ \hline
+    Revisão bibliográfica                                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           \\ \hline
+    Aprimoramento de aspectos técnicos                              &                           &                           &                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &                           &                           &                           &                           &                           \\ \hline
+    Elaboração de simulação Catia                                   &                           &                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           &                           &                           &                           \\ \hline
+    Qualidade das justificativa das escolhas (quadros comparativos) &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           &                           &                           &                           \\ \hline
+    Revisão 1.0                                                     &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X &                           &                           &                           \\ \hline
+    Revisão professor                                               &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X &                           &                           \\ \hline
+    Revisão 2.0                                                     &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X & \cellcolor[HTML]{3166FF}X &                           \\ \hline
+    Apresentação ponto de controle                                  &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{3166FF}X \\ \hline
+    \end{tabular}
+  \caption{Cronograma de atividades para o segundo  Ponto de Controle de PI 1.}
+  \label{tab:cronograma2}
+    \end{table}
+
+\begin{table}[H]
+\centering
+  \begin{tabular}{|p{2.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|p{0.5cm}|}
+\hline
+\multicolumn{16}{|c|}{Terceiro ponto de controle}                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+Atividades            & \scalebox{.7}{11/11}                     & \scalebox{.7}{12/11}                     & \scalebox{.7}{13/11}                     & \scalebox{.7}{14/11}                     & \scalebox{.7}{15/11}                     & \scalebox{.7}{16/11}                     & \scalebox{.7}{17/11}                     & \scalebox{.7}{18/11}                     & \scalebox{.7}{19/11}                     & \scalebox{.7}{20/11}                     & \scalebox{.7}{21/11}                     & \scalebox{.7}{22/11} & \scalebox{.7}{25/11}                     & \scalebox{.7}{27/11} & \scalebox{.7}{30/11}                     \\ \hline
+Revisão bibliográfica & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X &                           &                           &                           &                           &                           &                           &                           &       &                           &       &                           \\ \hline
+Relação de custo      &                           &                           &                           & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X &                           &                           &                           &                           &                           &       &                           &       &                           \\ \hline
+Viabilidade econômica &                           &                           &                           &                           &                           & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X &                           &                           &       &                           &       &                           \\ \hline
+Revisão               &                           &                           &                           &                           &                           &                           &                           &                           &                           & \cellcolor[HTML]{FE0000}X & \cellcolor[HTML]{FE0000}X &       &                           &       &                           \\ \hline
+Revisão professor     &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &       & \cellcolor[HTML]{FE0000}X &       &                           \\ \hline
+Revisão final         &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &       &                           &       & \cellcolor[HTML]{FE0000}X \\ \hline
+Apresentação final    &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &                           &       &                           &       & \cellcolor[HTML]{FE0000}X \\ \hline
+\end{tabular}
+
+  \caption{Cronograma de atividades para o terceiro  Ponto de Controle de PI 1.}
+  \label{tab:cronograma3}
+\end{table}
+\textbf{Legenda} \\
+  \color[HTML]{3166FF}Atividade realizada \\
+  \color[HTML]{FE0000}Atividade não realizada
+  \color[HTML]{000000}
+
 
 \section{Organização do Documento} % (fold)
 \label{sec:organiza_o_do_documento}
 
-% section organiza_o_do_documento (end)
+  O relatório do Ponto de Controle 2 da disciplina de Projeto Integrador 1 do grupo 1 irá abordar, além da definição do escopo do projeto do SUM, o desenvolvimento técnico do sistema do balão de acordo com as grandes áreas de pesquisas definidas na EAP.
+
+  O primeiro tópico do desenvolvimento será a proposição de um modelo geral do Sistema Unificado de Monitoramento, explanando de maneira simplificada o seu funcionamento, de modo que o leitor consiga acompanhar os tópicos seguintes referentes à estrutura e sistema aéreo, estação de solo, eletrônica embarcada e consumo energético.
+
+  O tópico Subprojeto de Estrutura e Sistema Aéreo apresenta e desenvolve modelos matemáticos aplicados à estrutura do balão cativo, materiais e gás a serem utilizados, bem como os cálculos de volume do balão, empuxo líquido e forças atuantes. O posicionamento dos cabos e a sustentação do mesmo também são
+
+  O Subprojeto da Estação de Solo apresenta os dados sobre armazenamento e processamento de imagens, as configurações dos servidores, como será a comunicação  do operador da estação com a segurança do campus, a localização da estação de solo.
+
+  As configurações das câmeras e dos sensores, establização da carga útil em casos de condições climáticas desfavoráveis, manutenção do balão e integração das soluções de hardware e software estão dispostas no Subprojeto de Eletrônica Embarcada.
+
+  A análise de melhor opção para alimentação energética do SUM, os dados referentes ao consumo e os diagramas do processo de fornecimento energético estão dispostos no subtópico Consumo Energético.
+
+  A integração de todas as grandes áreas de pesquisa e do conteúdo desenvolvido estará no subtópico Integração da Solução, apresentando de maneira técnica todo o funcionamento dos balões cativos, para, por fim, concluir o relatório com os dados e avaliações preliminares.

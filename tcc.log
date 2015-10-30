@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.30)  30 OCT 2015 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.30)  30 OCT 2015 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1387,11 +1387,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 
 
 Writing index file tcc.idx 
-(./tcc.aux
-
-LaTeX Warning: Label `sec:detalhamentoProblema' multiply defined.
-
-)
+(./tcc.aux)
 \openout1 = `tcc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -1656,23 +1652,402 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] [7]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 54.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 60.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 54.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 60.
 
-[8]) [9] [10] (./editaveis/desenvolvimento.tex (./editaveis/propostaSolucao.tex
+[8] [9]
+Overfull \hbox (25.44406pt too wide) in paragraph at lines 108--115
+ [][] 
+ []
+
+[10] [11pdfTeX warning (ext4): destination with the same identifier (name{table
+.1.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+      ]
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 152--152
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 154--154
+[]|\T1/lmr/m/n/12 Definição es-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+[]|\T1/lmr/m/n/12 Apresentação
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 159--159
+[]|\T1/lmr/m/n/12 Revisão pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]|\T1/lmr/m/n/12 Apresentação
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+\T1/lmr/m/n/12 ponto de
+ []
+
+
+Overfull \hbox (28.32724pt too wide) in paragraph at lines 149--163
+ [][] 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 172--172
+[]|[]| 
+ []
+
+
+Overfull \hbox (9.80864pt too wide) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/12 Aprimoramento
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/12 de as-pec-tos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]|\T1/lmr/m/n/12 Elaboração
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 175--175
+\T1/lmr/m/n/12 de si-mu-la-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+[]|\T1/lmr/m/n/12 Qualidade
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+\T1/lmr/m/n/12 das jus-ti-fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+\T1/lmr/m/n/12 ca-tiva das
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+\T1/lmr/m/n/12 es-co-lhas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+\T1/lmr/m/n/12 (qua-dros
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+\T1/lmr/m/n/12 com-pa-ra-ti-
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 178--178
+[]|\T1/lmr/m/n/12 Revisão pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/lmr/m/n/12 Apresentação
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/lmr/m/n/12 ponto de
+ []
+
+
+Overfull \hbox (28.32724pt too wide) in paragraph at lines 169--182
+ [][] 
+ []
+
+[12pdfTeX warning (ext4): destination with the same identifier (name{table.1.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.185 
+      ]
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.33598pt too wide) in paragraph at lines 191--191
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
+[]|\T1/lmr/m/n/12 Relação de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]|\T1/lmr/m/n/12 Viabilidade
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 196--196
+[]|\T1/lmr/m/n/12 Revisão pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+[]|\T1/lmr/m/n/12 Apresentação
+ []
+
+
+Overfull \hbox (28.32724pt too wide) in paragraph at lines 188--200
+ [][] 
+ []
+
+[13pdfTeX warning (ext4): destination with the same identifier (name{table.1.3}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.204 \textbf{Legenda}
+                       \\] [14pdfTeX warning (ext4): destination with the same 
+identifier (name{table.1.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.222 
+      ]) [15] (./editaveis/desenvolvimento.tex (./editaveis/propostaSolucao.tex
 ) (./editaveis/sistemaAereo.tex) (./editaveis/estacaoSolo.tex
 (./editaveis/estruturaEstacao.tex
-<figuras/estacaoSolo.png, id=121, 538.01pt x 303.1325pt>
+<figuras/estacaoSolo.png, id=156, 538.01pt x 303.1325pt>
 File: figuras/estacaoSolo.png Graphic file (type png)
 
 <use figuras/estacaoSolo.png>
 Package pdftex.def Info: figuras/estacaoSolo.png used on input line 6.
 (pdftex.def)             Requested size: 273.00278pt x 153.81845pt.
-) (./editaveis/identificacaoRisco.tex [11
+) (./editaveis/identificacaoRisco.tex [16
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
@@ -1680,20 +2055,20 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.9 
-     <./figuras/estacaoSolo.png>] [12pdfTeX warning (ext4): destination with th
-e same identifier (name{table.2.1}) has been already used, duplicate ignored
+     <./figuras/estacaoSolo.png>] [17pdfTeX warning (ext4): destination with th
+e same identifier (name{table.2.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.36 	P
        ara captaÃ§Ã£o destes critÃ©rios, o sistema deverÃ¡ possuir sensores ...
 ])) (./editaveis/eletronicaEmbarcada.tex) (./editaveis/consumoEnergetico.tex)
-(./editaveis/integracaoSolucao.tex)) [13] (./editaveis/conclusoes.tex))
+(./editaveis/integracaoSolucao.tex)) [18] (./editaveis/conclusoes.tex))
 (./tcc.bbl (./tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [14
+ [19
 
 ]
 bibitemlist
@@ -1704,7 +2079,7 @@ LaTeX Warning: Empty `thebibliography' environment on input line 8.
 No file tcc.ind.
 
 AED: lastpage setting LastPage
-[15
+[20
 
 ]
 \tf@lof=\write6
@@ -1723,32 +2098,29 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 22823 strings out of 493105
- 407721 string characters out of 6137072
- 591359 words of memory out of 5000000
- 25813 multiletter control sequences out of 15000+600000
- 82222 words of font info for 61 fonts, out of 8000000 for 9000
+ 22838 strings out of 493105
+ 407853 string characters out of 6137072
+ 624813 words of memory out of 5000000
+ 25817 multiletter control sequences out of 15000+600000
+ 86484 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,16n,39p,10420b,888s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share
 /texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (16 pages, 652300 bytes).
+fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmsy10.pfb>
+Output written on tcc.pdf (21 pages, 678180 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  235 words of extra memory for PDF output out of 10000 (max. 10000000)
 
