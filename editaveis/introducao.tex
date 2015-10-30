@@ -1,10 +1,31 @@
-\section{Detalhamento do Problema} % (fold)
+\section{Detalhamento do Problema e justificativa} % (fold)
 \label{sec:detalhamentoProblema}
 
-% section section_name (end)
+O campus do Gama da Universidade de Brasília (figura 1), construído entre os anos de 2009 a 2011 , localizado na Área Especial de Indústria Projeção A, UnB- DF- 480- Gama Leste, Brasília-DF, possui área total de 335074 m$^2$, com área construída de aproximadamente 16009 m$^2$, sendo projetado para abrigar, no total, cinco cursos de engenharia, sendo eles de Aeroespacial, Automotiva, Eletrônica, Energia e Software.
 
-\section{Justificativa} % (fold)
-\label{sec:justificativa}
+!!!!!!!!!!!!!!!! imagem
+
+Em 2013, segundo informações do DaEng, sete meses após o início da gestão do Diretório Acadêmico do Gama , iniciaram-se medidas para a implementação do cercamento do campus. Contudo, mediante a falta de documentos legais, como licenciamento ambiental e demarcação de terras, o processo de licitação teve de ser adiado e, somente em meados do ano de 2015 as obras foram iniciadas.
+
+Diante disso, durante os anos de 2012 até os dias atuais, muitos alunos, professores e comunidade em geral que frequentam a Faculdade do Gama vêm enfrentando uma rotina de roubos a carros na área do estacionamento do campus, cujo principal fator seria a da falta de um cercamento, com guaritas, que possibilitassem o controle de pessoas que acessam o local. Os relatos dos alunos que foram vítimas dos furtos alegam, em sua maioria, terem sido levados o step, dispositivo de som.
+
+Dessa forma, foi elaborado um diagrama de espinha de peixe para avaliar os principais motivos pelos quais a comunidade da Faculdade do Gama sente-se insegura. Os problemas elencados apresentam estreita correlação com a falta de estrutura do campus, cercamento, por exemplo, possibilitando a fuga rápida do indivíduo infrator. A falta de câmeras externas, a ausência de policiamento  e a localização isolada do campus também facilitam para a ação dos indivíduos.
+
+!!!!!!!!!!!!!!!!imagem
+
+Também, como maneira de obter alguns dados referentes à mobilidade de alunos, professores e comunidade até o campus, o Grupo 1 da disciplina Projeto Integrador 1 decidiu aplicar uma pesquisa sobre o meio de transporte utilizado para descolamento residência-campus,   quantas vezes o veículo foi roubado, se o indivíduo prestou alguma queixa formal (boletim de ocorrência) e o(s) ano(s) do ocorrido, caso este utilize automóvel para locomoção.
+
+A pesquisa foi elaborada no aplicativo Google Drive- Formulários  e publicada no período do dia 02 de agosto de 2015 ao dia 29 de agosto do mesmo ano no grupo desttinado aos alunos e professores da UnB-Gama na rede social Facebook. Durante este período, em parte, 93 pessoas responderam às seis questões propostas no questionário, resultando nos dados apresentados nos gráficos a seguir.
+
+!!!!!!!!!!!!!!!!!!!!!!!imagem
+
+O gráfico 1 apresenta a distribuição, no espaço amostral, dos meios  de transporte utilizados. Mais da metade dos alunos utilizam apenas ônibus para locomoção, 51,1\%, tendo 41,3\% utilizando apenas o carro como meio de transporte, sendo os 7,6\% restantes divididos entre locomoção a pé, bicicleta, ônibus e carro. Apresenta-se, então, uma significativa frota de carros diária no campus, demandando maiores investimentos para segurança destes bens.
+
+O gráfico 2, gerado pelo programa Numbers, apresenta, de acordo com a amostra total de usuários de carros, que 11 carros foram furtados e que, deste total, 9 pessoas apresentaram queixa formal, ou seja, boletim de ocorrência. O período dos furtos foi de 2010 a 2015.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!! imagem
+
+Dessa maneira, baseando-se nos dados coletados e avaliando os riscos nos quais os alunos estão submetidos, há, então, a necessidade de se projetar  um sistema que, em conjunto com a segurança do campus, possa realizar o monitoramento  da área do estacionamento, de maneira eficiente, e fluxo de pessoas,  com o objetivo de aumentar o controle de entradas e saídas de veículos e pessoas no campus e alertar às autoridades responsáveis, em casos de furtos, em tempo hábil para que as medidas necessárias sejam tomadas.
 
 % section section_name (end)
 
@@ -14,12 +35,39 @@
   \subsection{Objetivos Gerais} % (fold)
   \label{sub:objetivos_gerais}
 
-  % subsection objetivos_gerais (end)
+  O objetivo geral do projeto é desenvolver um sistema que potencialize a segurança já existente no estacionamento do campus da UnB Gama, de modo que este monitore a circulação de carros e movimentações de pessoas, identificando possíveis situações de risco e acionando, com o auxílio de um operador na estação de solo, local para onde serão transmitidas as imagens, que irá acionar as entidades responsáveis pela segurança do campus da Faculdade do Gama.
 
   \subsection{Objetivos Específicos} % (fold)
   \label{sub:objetivos_espec_ficos}
 
-  % subsection objetivos_espec_ficos (end)
+  O Sistema Unificado de Monitoramento irá fazer o monitoramento de toda a área externa do campus da UnB Gama, em específico da área do estacionamento, que é de 16100 m$^2$ (delimitada em azul na figura 2).
+
+  !!!!!!!!!!!!!!!!!!!!!imagem
+
+  O monitoramento será exclusivamente externo, como já definido, e os balões estarão localizados nos térreos dos prédios UED, UAD E RU, de forma que toda a área seja monitorada e não haja pontos cegos. Dessa forma, o monitoramento interno dos prédios não estará incluído no escopo do projeto, pois o objetivo é o monitoramento do fluxo de pessoas e carros no estacionamento do campus, e este será de responsabilidade total da instituição.
+
+  O funcionamento do balão será baseado na captação e processamento de imagens que, posteriormente, serão transmitidas para uma estação de solo, que irá autenticar as informações e, com o auxílio de um operador funcionário da instituição, estas imagens serão interpretadas e, se identificados padrões de atividades caracterizadas como suspeitas ou de furto, as entidades responsáveis pela Faculdade do Gama serão acionadas. A opção de acionamento da polícia não entrará no escopo do projeto, pois o SUM é um mecanismo interno da UnB-Gama e que visa apenas a identificação de possíveis atividades suspeitas e rápida tomada de decisão pela segurança do campus. É importante salientar que não será feita a identificação facial da pessoa que está realizando a atividade suspeita.
+
+  O sistema identificará todas as áreas do estacionamento em que houver atividade suspeita, alertando visualmente o operador do sistema e informando o grau de risco da situação identificada. O sistema utilizará os seguintes fatores para calcular o risco de furto numa determinada área:
+
+  \begin{itemize}
+    \item Presença de pessoas nas áreas delimitadas como estacionamentos por tempo maior que 30 segundos.
+    \item Aproximação de um raio de 2 metros de um grupo de automóvel por período superior a 5 segundos com pouca movimentação.
+    \item Sair do campo de visão da câmera por mais de 5 segundos estando próximo de um automóvel.
+    \item Tocar constantemente em um automóvel e em um curto espaço de tempo sem adentrar no mesmo.
+  \end{itemize}
+
+  Os fatores elencados acima terão um valor específico que, em conjunto com outros fatores, definirão as atividades com risco de furto baixo, médio ou alto.
+
+  O operador recebendo os alertas visualmente nas telas de monitoramento, conseguirá identificar quais áreas merecem mais atenção quanto à sua observação, sendo seu dever certificar se a atividade suspeita necessita de intervenção por parte da segurança do campus ou se é apenas um alarme falso.
+
+  Devido ao custo elevado e incertezas inerentes ao uso de inteligência artificial na identificação de crimes em lugares de grande movimentação e sem controle de fluxo de pessoas, decidiu-se por utilizar este sistema híbrido que concilia a tomada de decisão humana com a praticidade, facilidade e rapidez na identificação de atividades suspeitas feitos por um sistema inteligente, mas não autônomo.
+
+  As câmeras a serem utilizadas para monitoramento, e que estarão acopladas à payload, serão de longo alcance e infravermelho.  As câmeras de longo alcance deverão captar imagens com qualidade suficiente para identificação de movimentação suspeita, abrangendo toda a área do estacionamento. As câmeras de leds infravermelhos terão como objetivo o monitoramento noturno.
+
+  O SUM será composto pelo conjunto de balões cativos posicionados em locais estratégicos da área externa do campus, especificamente nos terraços dos três prédios do campus, para a melhor visualização das movimentações nas áreas do estacionamento. Os balões irão funcionar até 25 metros de altitude, com capacidade para levantar 10 kg de carga útil, incluindo cabo de energia. O sistema irá funcionar 24/7 (24 horas por 7 dias) devido às várias atividades fora do período de aulas, que é das 8:00 às 18:00 horas. Por exemplo, concursos públicos, aulas da UnB Idiomas, eventos culturais, etc. Contudo, o sistema não irá operar quando houver condições adversas de tempo, como chuva intensa, e tormenta elétrica, devido a possibilidade de danos ao equipamento.
+
+  O monitoramento a noite será feito com o uso de câmeras de leds infravermelho, como já definido anteriormente. Todavia, avaliando as condições visuais, a altitude do balão e a distância que este estará do estacionamento, pois os leds não terão capacidade  de identificar a atividade suspeita nas condições supracitadas, terá de ser utilizado um sistema de iluminação cujo funcionamento será o acionamento da luz quando detectado movimento. O projeto não irá abordar o quesito de instalação dos postes.
 
 % section Objetivos (end)
 
