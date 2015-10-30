@@ -5,4 +5,37 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Linux Raid]{raid}
+\abntrefinfo{Linux\ldots}{LINUX\ldots}{}
+{LINUX Raid. \url{https://raid.wiki.kernel.org/index.php/Linux_Raid}.
+Acessado em 28/10/2015 as 11:54.}
+
+\bibitem[lovicon 2015]{walk}
+\abntrefinfo{lovicon}{LOVICON}{2015}
+{LOVICON. \emph{Rádio Comunicador Walk Talk Cobra Cxr925 56 Km}. [S.l.]:
+  Mercado Livre, 2015.
+  \url{http://produto.mercadolivre.com.br/MLB-704264416-radio-comunicador-walk-talk-cobra-cxr925-56-km-_JM}.}
+
+\bibitem[Mania 2015]{mercadoLivreVIPE5120}
+\abntrefinfo{Mania}{MANIA}{2015}
+{MANIA, D. \emph{Câmera Speed Dome Ip 1.3 Mega Ir 100m Vip E5120 Ir
+  Intelbras}. [S.l.]: Mercado livre, 2015.
+  \url{http://produto.mercadolivre.com.br/MLB-704862248-cmera-speed-dome-ip-13-mega-ir-100m-vip-e5120-ir-intelbras-_JM}.}
+
+\bibitem[Seagate 2015]{seagate}
+\abntrefinfo{Seagate}{SEAGATE}{2015}
+{SEAGATE. \emph{Seagate video 3.5 HDD}. [S.l.]: Seagate, 2015.
+  \url{http://www.seagate.com/br/pt/products/media-video-storage/surveillance-drives/video-3-5-hdd}.}
+
+\bibitem[segurança 2015]{nobreak}
+\abntrefinfo{segurança}{SEGURANçA}{2015}
+{SEGURANçA, V. com. \emph{No-Break Organizador e Fonte para 16 câmeras ONAT}.
+  [S.l.]: Viver com segurança, 2015.
+  \url{http://www.vivercomseguranca.com.br/sistema-de-camera/no-break-para-sistema-de-cameras/no-break-organizador-e-fonte--para-16-cameras-onat}.}
+
+\bibitem[Weber]{webertolerancia}
+\abntrefinfo{Weber}{WEBER}{}
+{WEBER, T.~S. Toler{\^a}ncia a falhas-conceitos e exemplos.[sl], 2003.
+\emph{Citado na}, p.~26.}
+
 \end{thebibliography}
