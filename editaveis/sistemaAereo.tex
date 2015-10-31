@@ -274,3 +274,79 @@ A tabela abaixo mostra todos os valores de forças verticais atuantes no balão.
 	\caption{Forças Atuantes no Balão}
 	\label{tab:forcasAtuantes}
 \end{table}
+
+\subsection{Empuxo Líquido em Função do Tempo} % (fold)
+\label{sub:empuxo_l_quido_em_fun_o_do_tempo}
+	
+	A força resultante gerada por um  fluido e que atua nos corpos é denominada empuxo. Esta força líquida vertical, com sentido para cima, é o resultado do gradiente de pressão (Munson, 2004). O empuxo é dado pela seguinte fórmula:
+
+	$E = (rô)gV$ ,
+
+	onde (rô) é a densidade do fluido, g é a aceleração da gravidade e V é o volume do fluido deslocado.
+	O peso do gás utilizado é dado pela seguinte fórmula:
+	
+	$P = (rô)g V$
+
+	Desta forma, a força (delta)F para cima do balão é
+	
+	$deltaF =  g V (rôar - rôHe)$
+	
+	DeltaF depende do volume do balão.
+	 
+	 A quantidade de massa, em kilogramas, que sai pelo duto diariamente é diretamente proporcional a quantidade de matéria que sai. No caso do hélio temos:
+
+		 $Mm = 4g/mol = Mk/n   == n = Mk/4$
+
+	Aplicando na Eq. (2.2.4) ,temos:
+	
+	$mf = mi (0,92086)^t$ ,
+	
+	 onde mf é a massa final e mi é a massa inicial.
+	Como a massa é calculada como:
+
+	$rô g V = m$,
+
+	temos:
+	
+	$Vf = Vi (0,92086)^t$,
+
+	 onde \textbf{Vf} é o volume final e \textbf{Vi} é o volume inicial
+
+	Substituindo a equação da força líquida \textbf{deltaF} nessa equação acima temos:
+
+
+	$deltFf = deltaFi(0,92086)^t$
+	
+	onde deltaFf é a força líquida final e deltaFi é a força líquida inicial.
+	 
+	 O empuxo líquido é dado pela soma de todas as forças verticais excluindo a força de tração nos cabos. Logo temos:
+
+	$El = deltaF - ( Pc + Pm + Pp+Pe)$
+	
+	onde \textbf{El} é o empuxo líquido, \textbf{Pc} é o peso dos cabos, \textbf{Pm} é o peso do material do envelope, \textbf{Pp} é o peso da payload, \textbf{Pe} é o peso extra. 
+	Substituindo a primeira equação na segunda, podemos saber a variação do empuxo líquido no tempo. Sabendo que:
+
+	 $Pc + Pm + Pp+Pe = 283 N$   e
+
+	 $deltaFi = (0.862)(1,11166)(9.8)(113.1) = 1062.1 N$
+
+	temos:
+
+	 $El = 1062.1(0,92086)^t - 283$
+
+	Esta equação mostra a variação do empuxo líquido em função do tempo, desta forma, é possível estimar o tempo que levará para o balão esvaziar igualando o $E_l$ a zero e isolando o tempo.
+
+	$t = \frac{ln(283) – ln(1062.2)}{ln(0.92086} \Rightarrow t = 16 dias$
+
+	portanto, após 16 dias o balão cairia. A figura TAL mostra o gráfico do empuxo líquido pelo tempo. O tempo ideal para reabastecer o balão com hélio é uma vez por semana, com esse tempo o balão ainda tem um empuxo líquido de 313.14 N.
+	
+	Uma observação importante é que esses cálculos realizados para predizer o comportamento do balão no tempo levam em consideração que todo dia exista uma variação térmica de cerca de 22 ºC, porém sabemos que esse fato não ocorre cotidianamente analisando os dados do INMET.
+
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{figuras/empuxoLiquidoTempo}
+		\caption{Gráfico de Empuxo x Tempo.}
+		\label{img:empuxoLiquidoTempo}
+	\end{figure}
+% subsection empuxo_l_quido_em_fun_o_do_tempo (end)
