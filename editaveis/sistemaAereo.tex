@@ -351,6 +351,112 @@ A tabela abaixo mostra todos os valores de forças verticais atuantes no balão.
 	\end{figure}
 % subsection empuxo_l_quido_em_fun_o_do_tempo (end)
 
+\subsection{Forças no Balão} % (fold)
+\label{sub:for_as_no_bal_o}
+
+De acordo com YAJIMA(2009), a força \textbf{F} que atua no balão devido ao vento relativo tem duas componentes: A força de arrasto, que atua paralelamente a direção do vento relativo, e a força lateral, que atua perpendicular à direção do vento.
+Tais forças são descritas pelas equações:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figuras/equacoesArrasto}
+		\caption{}
+		\label{img:equacoesArrasto}
+	\end{figure}
+
+	Onde:
+
+	\textbf{Fd} = Força de Arrasto;
+
+	\textbf{Fy} = Força Lateral;
+
+	\textbf{Pa} = Densidade do Ar;
+
+	\textbf{Cd} = Coeficiente de Arrasto;
+
+	\textbf{Cy} = coeficiente de força lateral efetiva;
+
+	\textbf{Ab} = Area Frontal.
+
+	Considerando que o balão de monitoramento deve permanecer parado, podemos considerar que a velocidade do balão é nula, e a força de arrasto e força lateral se darão apenas em função da velocidade do vento.
+
+	Para o calcula da força de arrasto e força lateral então é necessário conhecer a velocidade do vento que incidirá sobre o balão. Para determinar a velocidade do vento entramos no Banco de Dados Histórico do Instituto Nacional de Meteorologia(INMET), disponíveis no próprio site da instituição, que pode ser acessado clicando \href{www.inmet.gov.br}{AQUI}. Para termos um valor que nos desse uma margem de segurança analisamos os dados de 01/01/2005 a 01/01/2015. No período avaliado a maior velocidade do vento ocorrida no DF registrada foi de 17 m/s.
+
+	O Coeficiente de Arrasto e o coeficiente de força lateral está diretamente relacionado ao número de Reynolds. O número de Reynolds é um número adimensional usado em mecânica dos fluidos para o cálculo do regime de escoamento de determinado fluido dentro de um tubo ou sobre uma superfície (BIRD, 2004).
+
+	Segundo YAJIMA(2009), o número de Reynolds para um balão é dado pela equação:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figuras/equacaoNumeroDeRey}
+		\caption{}
+		\label{img:equacaoNumeroDeRey}
+	\end{figure}
+
+	Onde:
+
+	\textbf{Reb} = Número de Reynolds;
+
+	\textbf{Db} = Diâmetro do Balão;
+
+	\textbf{Vw} = Velocidade do Vento;
+
+	\textbf{Vb} = Velocidade do Balão;
+
+	\textbf{“Mí”a} = coeficiente de viscosidade do Ar .
+
+	Considerando que o balão terá um diâmetro de 6m e a Brasília se encontra a uma altitude próxima a 1000m acima do nível do Mar. Temos que:
+
+	Densidade do Ar a 1km de altitude: “Rô”a = $1,11166 Kg/m^3$ - Tabela de atmosfera padrão  (BIRD,2004)
+
+	Diâmetro do Balão: 6m
+
+	Velocidade máxima do vento observada: 17 m/s
+
+	Viscosidade do Ar : 0,01813 mPa.s (BIRD,2004)
+
+	Logo:
+
+	Reb = $(1.11166 kg/m^3 X 6m X 17 m/s) / 0,01813 x 10^(-3) Pa.s$
+
+	$Reb = 6.354 x 10^6$
+
+	A Tabela a seguir mostra o coeficiente de arrasto do balão em função do número de Reynolds do fluido e do formato do balão. Para o número de Reynolds da ordem de 6 x 106  temos um coeficiente de arrasto de aproximadamente 0,2.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figuras/coeficienteArrasto}
+		\caption{Coeficiente de Arrasto x Número de Reynolds}
+		\label{img:coeficienteArrasto}
+	\end{figure}
+
+	Tendo em mão esses valores podemos então calcular a força máxima de arrasto que o balão estará sujeito. Temos que:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figuras/formulasCoeficienteArrasto}
+		\caption{}
+		\label{img:formulasCoeficienteArrasto}
+	\end{figure}
+
+
+	O coeficiente de força lateral efetiva para um balão que se encontra estacionário é de 0.18 (FERGUSON,1981). Podemos observar que nas duas equações este é o único valor que se altera, logo temos que:
+
+	Fy=817,38 N
+
+	Temos então que sobre o Balão atuaram as seguintes forças:
+
+	Força de Arrasto: 908,2 N
+
+	Força Lateral: 817,38 N
+
+	Força de Empuxo: 800 N
+
+	O que nos dá uma força resultante de:
+
+	$\textbf{FD}= \sqrt{908,22+ 817,382+8002N}$
+
+	\textbf{FD}=1460,458 N
 
 \subsection{POSICIONAMENTO DOS CABOS}
 
