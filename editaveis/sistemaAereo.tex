@@ -89,8 +89,6 @@
 	
 	O sistema ZP recebe esse nome porque a pressão interna do balão é a mesma  pressão do ambiente de atuação do sistema. Na parte de baixo do envelope do balão existe pelo menos um duto que permite a saída do gás dentro do balão para o alívio da pressão interna, como é exemplificado na Figura \ref{img:maiorBalaoZeroPressao}.
 
-	maiorBalãoZeroPressao
-
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{figuras/maiorBalaoZeroPressao}
@@ -101,8 +99,6 @@
 	Para esse sistema normalmente é utilizado um material com 20 micrometros de espessura para o envelope. O balão é inflado em terra e é solto na atmosfera até que a força de empuxo seja igual ao seu peso. O duto funciona de tal modo que quando a pressão interna na base do balão excede a pressão da atmosfera exterior, o duto é empurrado para fora e forma uma um cilindro que permite que parte do gás seja expelida. Quando a diferença de pressão é negativa, a pressão atmosférica empurra o duto para dentro, impedindo a entrada de ar. Com a queda de temperatura, o gás esfria e contrai-se, diminuindo o volume e consequentemente o empuxo. Em balões atmosféricos usado pela NASA, para manter a altitude constante durante a noite o balão solta pesos c, como por exemplo areia, durante esse período a quantidade de gás dentro do envelope é a mesma pois o duto se fecha quando o gás se contrai. Porém, no próximo dia, com o aumento da temperatura o gás irá se expandir, aumentando o volume e subindo mais, pois estará mais leve. Para manter uma altitude a mais constante possível, segundo a NASA, um balão desse tipo requer uma perda de 6 a 8\% de massa quando a temperatura diminui. O principal problema desse tipo de sistema é a perda de gás pelo duto aberto ao ambiente. 
 
 	O sistema SP possui a vantagem de ser completamente vedado, ou seja, não perde gás durante seu período de atividade. Por esse fato o balão tem uma pressão interna maior que a pressão externa e isso implica no aumento da espessura do envelope, normalmente cerca de 10 vezes maior que a espessura de um balão ZP (Yajima, 2009). A Figura 3 mostra a distribuição de pressão de um balão atmosférico da NASA, percebe-se que o equador do envelope é a área de maior concentração de pressão e isso inviabilizaria o uso de uma fita de carga para fixar a payload, nesse tipo de balão a payload é fixada na parte de baixo do envelope, esse fato exige que a parte de fixação seja reforçada para que o envelope não seja danificado.
-
-	distribuicaoPressao
 
 	\begin{figure}[H]
 		\centering
@@ -143,5 +139,138 @@
 			                                 
  		onde \textbf{nf} é a quantidade de matéria final, \textbf{ni} é a quantidade de matéria inicial e \textbf{t} é o número de dias.
 
-
 % subsection modelo_do_bal_o (end)
+
+\subsection{Cálculo  do Volume do Balão} % (fold)
+\label{sub:c_lculo_do_volume_do_bal_o}
+
+	\subsubsection{Cálculo Preliminar do Volume do Balão}
+
+	O volume do balão foi calculado primeiramente desprezando a tensão e o peso dos cabos. 	O volume do gás Hélio foi calculado da seguinte maneira:
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figuras/corpoLivreBalao}
+		\caption{Diagrama de Corpo Livre de um Balão.}
+		\label{img:corpoLivreBalao}
+	\end{figure}
+
+	Partindo do principio de que o volume de gás tem que gerar uma força de empuxo maior que a força peso, como mostrado na figura acima, para que o balão consiga ficar a uma certa altitude. Os cabos de apoio do balão foram desconsiderados nesse cálculo preliminar. A partir disso consideremos a seguinte fórmula para o calculo de empuxo (Munson, 2004):
+
+	E = d\textit{ar} g V
+
+
+	\textbf{V} = volume da bexiga
+	
+	\textbf{dar} = $1.225 kg/m^3$
+	
+	\textbf{MH}: massa do gás Hélio 
+
+	$MH = 0.138dar g V$
+
+	\textbf{MM}:massa do material 
+
+ 			$MM = 940 x 20e-6 x A$		
+
+	\textbf{A} = area da bexiga
+	\textbf{dm} = densdidade do material = $940 kg/m^3$
+	\textbf{lm} = espessura do material = 20 micrometros
+
+	A massa da payload foi estimada em cerca de 5 kg, para margem de segurança os cálculos foram realizados com uma massa de 10 kg. 
+
+	\textbf{MP}:massa do payload 
+	
+	$MP =  10kg$
+
+	Pelo balanço de forças:
+
+	$E = g(MH+MM+MP)$
+
+	Substituindo 1, 2, 3 em 4, temos:
+
+	$dar g V = g(0.138dar  V + 18,8e-3 x A + 10)$
+
+	como trata-se de um balão esférico temos que: 
+
+	$V = 4pi r3/3 e A = 4pi r2$
+
+	voltando a equação:
+
+	$dar 4pi r3/3 = 0.138dar4pi r3/3 + 18,8e-3 4pi r2 +10$ 
+
+	isolando e agrupando os termos semelhantes temos:
+
+	$dar 4pi r3/3 (1 - 0.138) - 18,8e-3 4pi r2 -10 = 0$
+
+	Substituindo os valores e usando o método de Newton para calcular as raízes de polinômios:
+
+	$f(xi+1) = xi - f(xi) / f ’ (xi)	$
+
+	foi obtido um valor para r = 1,4 m
+
+	 Logo o balão teria que ter pelo menos 1,4 metros de raio. A partir desse valor calcula-se o empuxo, o peso do hélio, o peso e a quantidade de polietileno que o balão irá precisar.A tabela abaixo mostra todos os valores de forças verticais atuantes no balão. Para o cálculo do empuxo considerou-se \textbf{ar}  = $1.11166 kg/m^3$, que é a densidade do ar a 1000m de altitude. Considerou-se \textbf{h} = \textit{0.138 ar} que é a massa específica do hélio.
+
+	 \begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} \textbf{Grandezas}} & {\color[HTML]{000000} \textbf{Valores Numéricos (N)}} \\ \hline
+			Empuxo                                    & 138,1                                                 \\ \hline
+			Peso do Hélio                             & 19,1                                                  \\ \hline
+			Peso do material do envelope              & 4,6                                                   \\ \hline
+			Peso da Payload                           & 100                                                   \\ \hline
+		\end{tabular}
+		\caption{Forças Verticais Atuantes no Balão}
+		\label{tab:forcasVerticaisAtuantes}
+	\end{table}
+
+
+As contas acima foram realizadas para que se tivesse uma ideia inicial do tamanho do balão e da ordem de grandeza das forças associadas.
+
+% subsection c_lculo_do_volume_do_bal_o (end)
+
+\subsubsection{Cálculo Real do Volume do Balão}
+
+ O  balão irá operar em uma faixa de altura entre 20 e 25 metros em relação ao solo, porém  o mesmo será fixado no alto dos prédios da Universidade de Brasília no Campus do Gama, esses prédios têm uma altura de 10 a 12 metros dependendo do prédio. Desta forma, foram decididos os pontos de fixação e calculado o tamanho dos cabos, e concluiu-se que os cabos deveriam ter no máximo 20 metros de comprimento. 
+O cabo de aço escolhido tem um diâmetro de 6,4 mm e tem massa aproximada de 146 gramas por metro, um balão precisa de três cabos de sustentação de 20 metros cada. Desta forma o peso devido a massa dos cabos será:
+
+$(C x m x g) x nc = (20 x 0.146 x 9,8 ) x 3 = 86 N$
+
+Onde,
+
+\textbf{C} = comprimento do cabo
+
+\textbf{m} = massa por unidade de comprimento
+
+\textbf{g} =  aceleração da gravidade
+
+\textbf{nc} = número de cabos
+
+O cabo de alimentação energética tem uma massa aproximada de 50 gramas por metro, como esse cabo não pode sofrer esforço mecânico, ele nunca  ficará tensionado e para isso seu comprimento deverá ser maior que o comprimento dos outros cabos. Para o cálculo do peso desse cabo seu comprimento será de 25 metros, procedendo da mesma forma no cálculo dos outros cabos temos:
+
+$25 x 0,05x 9,8 = 13 N$
+
+Portanto o peso total dos cabos será na faixa de 100 N.
+Ainda existem peças que não foram levadas em consideração nessa conta como os mosquetões, sistema de estabilização entre outros. Admiti-se que essa carga extra não ultrapasse o valor de 20 N.
+O volume do balão diminuirá com com o passar dos dias, visto que a quantidade de matéria diminuirá a uma taxa de 7.9\% ao dia, e para não termos que descer o balão em um pequeno intervalo de tempo dobraremos o raio do balão, ficando com um valor de 3 metros. Por margem de segurança usaremos um envelope com 60 micrometros de espessura.
+
+A tabela abaixo mostra todos os valores de forças verticais atuantes no balão. Para o cálculo do empuxo considerou-se \textbf{ar}  = $1.11166 kg/m^3$, que é a densidade do ar a 1000m de altitude. Considerou-se $h = 0.138 ar$ que é a massa específica do hélio.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Forças}} & {\color[HTML]{000000} \textbf{Valores Numéricos (N)}} \\ \hline
+		Empuxo                                 & 1232,1                                                \\ \hline
+		Peso do Hélio                          & 170                                                   \\ \hline
+		Peso do material do envelope           & 62,5                                                  \\ \hline
+		Peso dos Cabos                         & 100                                                   \\ \hline
+		Peso Extra                             & 20                                                    \\ \hline
+		Peso da Payload                        & 100                                                   \\ \hline
+		Empuxo Líquido                         & 780                                                   \\ \hline
+	\end{tabular}
+	\caption{Forças Atuantes no Balão}
+	\label{tab:forcasAtuantes}
+\end{table}
