@@ -82,8 +82,8 @@ O Seagate para gravação e backup de imagens deverá ser alimentado pelo sistem
                       & Unidades & Preço de uma unidade & Preço total    \\ \hline
 Waveshare OV5647 Night Vision   & 15       & R\$ 123,34         & R\$ 1850,10 \\ \hline
 Seagate$^{\textregistered}$ Vídeo 3.5 HDD & 4        & R\$ 984,90           & R\$ 3.939,60   \\ \hline
-Sistema Nobreak       & 1        & R\$ 396,90           & R\$396,90      \\ \hline
-Hardware              & 1        & R\$ 5.271,86         & R\$5.271,86    \\ \hline
+Sistema Nobreak       & 1        & R\$ 396,90           & R\$ 396,90      \\ \hline
+Hardware              & 1        & R\$ 5.271,86         & R\$ 5.271,86    \\ \hline
 \multicolumn{4}{|r|}{R\$ 11.458,46}                                     \\ \hline
 \end{tabular}
 \caption{Tabela de preços}
@@ -159,41 +159,37 @@ Os pontos negativos dessa técnica devem ser colocadas em pauta, como o aumento 
 
 Nessa técnica programas secundários só serão necessários na detecção de um erro no programa primário.Essa estratégia envolve um teste de aceitação.Programas são executados e testados um a um até que o primeiro passa no teste de aceitação. A estratégia de blocos de recuperação tolera n-1 falhas, no caso de falhas independentes nas n versões.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figuras/estacaoSolo}
+	\caption{Local da Estação Solo}
+	\label{img:estacaoSoloLocal}
+\end{figure}
 
+\textbf{Diagrama de Caso de Uso}
 
 \begin{figure}[H]
-		\centering
-		\includegraphics[width=0.6\textwidth]{figuras/estacaoSolo}
-		\caption{Local da Estação Solo}
-		\label{img:estacaoSoloLocal}
-	\end{figure}
-	
-\textbf{Diagrama de Casos de Uso}
-\begin{figure}[htp]
 	\centering
-\includegraphics[width=0.80\textwidth]{figuras/Casosdeuso}
-\caption{Casos de Uso}
-\label{Casos de Uso}
-\end{figure}
-\\
-
-
-\begin{figure}[htp]
-\centering
-\includegraphics[width=0.90\textwidth]{figuras/OperacionabilidadedoSistema}
-\caption{Operacionabilidade do Sistema}
-\label{img:Operacionabilidade do Sistema}
+	\includegraphics[width=0.7\textwidth]{figuras/Casosdeuso}
+	\caption{Diagrama de Caso de Uso}
+	\label{img:Casos de Uso}
 \end{figure}
 
 \textbf{Operacionabilidade do Sistema}
-\\\par 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figuras/OperacionabilidadedoSistema}
+	\caption{Diagrama de Arquitetura: Operacionalibilidade do Sistema}
+	\label{img:Operacionabilidade do Sistema}
+\end{figure}
+
 O sistema funcionará da seguinte maneira: no balão ocorrerá o processamento e tratamento das imagens recebidas (Processamento das câmeras). Após serem tratadas, estas imagens serão armazenadas em um HD da estação de solo(Gerenciamento de dados).
-\\\par
+
 Em outro processo paralelo, estas imagens  irão fornecer os dados para que o sistema execute suas funcionalidades, como o gerenciamento das imagens, a identificação e pontuação das situações de risco (Processamento). E a saída do sistema será por meio de uma interface que interagirá com o operador da estação de solo.
 
 \subsection{Processo de Monitoramento}
 O processo de monitoramento do Sistema Unificado de Monitoramento (SUM), relativo ao modus operandi dos agentes do sistema, é ilustrado pelo diagrama a seguir:
-
 
 \begin{figure}[H]
 \centering
