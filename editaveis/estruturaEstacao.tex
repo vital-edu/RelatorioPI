@@ -1,6 +1,6 @@
 \subsection{Armazenamento}
 
-	Neste projeto será utilizada a câmera VIP E5120 IR. É uma câmera já voltada para sistemas de vigilância, muito utilizada em escritórios e shoppings.
+	Neste projeto será utilizada a câmera Waveshare OV5647 Night Vision. É uma câmera já voltada para sistemas de vigilância, muito utilizada em escritórios e shoppings.
 
 	\begin{table}[H]
 		\centering
@@ -16,7 +16,7 @@
 		\label{my-label}
 	\end{table}
 
-	Serão utilizadas, no total, 15 câmeras do modelo  Waveshare ov5647, e para manter um armazenamento dessa quantidade vídeo, seria necessário um HD realmente potente e para tanto será utilizado o Seagate Archive 8TB. Como o sistema funcionará  24x7, ou seja, 24 horas por 7 dias da semana, o servidor irá passar as imagens para o HD a uma taxa de 1024 Kbps, em um mês (considerando um mês como 30 dias), será gasto um total de 4.63TB.
+	Serão utilizadas, no total, 15 câmeras do modelo  Waveshare ov5647, e para manter um armazenamento dessa quantidade vídeo, seria necessário um HD realmente potente e para tanto será utilizado o Seagate Archive 8TB. Como o sistema funcionará  24x7, ou seja, 24 horas por 7 dias da semana, o servidor irá passar as imagens caso a situação seja considerada de riscos, as imagens serão para o HD a uma taxa de 1024 Kbps, em um mês (considerando um mês como 30 dias), será gasto um total de 4.63TB.
 
 \begin{table}[H]
 	\centering
@@ -80,11 +80,11 @@ O Seagate para gravação e backup de imagens deverá ser alimentado pelo sistem
 \begin{tabular}{|l|l|l|l|}
 \hline
                       & Unidades & Preço de uma unidade & Preço total    \\ \hline
-Câmera VIP E5120 IR   & 15       & R\$ 8.728,10         & R\$ 130.921,50 \\ \hline
+Waveshare OV5647 Night Vision   & 15       & R\$ 123,34         & R\$ 1850,10 \\ \hline
 Seagate$^{\textregistered}$ Vídeo 3.5 HDD & 4        & R\$ 984,90           & R\$ 3.939,60   \\ \hline
 Sistema Nobreak       & 1        & R\$ 396,90           & R\$396,90      \\ \hline
 Hardware              & 1        & R\$ 5.271,86         & R\$5.271,86    \\ \hline
-\multicolumn{4}{|r|}{R\$ 140.529,86}                                     \\ \hline
+\multicolumn{4}{|r|}{R\$ 11.458,46}                                     \\ \hline
 \end{tabular}
 \caption{Tabela de preços}
 \label{table:precosComponentes}
@@ -167,3 +167,100 @@ Nessa técnica programas secundários só serão necessários na detecção de u
 		\caption{Local da Estação Solo}
 		\label{img:estacaoSoloLocal}
 	\end{figure}
+	
+\textbf{Diagrama de Casos de Uso}
+\begin{figure}[htp]
+	\centering
+\includegraphics[width=0.80\textwidth]{figuras/Casosdeuso}
+\caption{Casos de Uso}
+\label{Casos de Uso}
+\end{figure}
+\\
+
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.90\textwidth]{figuras/OperacionabilidadedoSistema}
+\caption{Operacionabilidade do Sistema}
+\label{img:Operacionabilidade do Sistema}
+\end{figure}
+
+\textbf{Operacionabilidade do Sistema}
+\\\par 
+O sistema funcionará da seguinte maneira: no balão ocorrerá o processamento e tratamento das imagens recebidas (Processamento das câmeras). Após serem tratadas, estas imagens serão armazenadas em um HD da estação de solo(Gerenciamento de dados).
+\\\par
+Em outro processo paralelo, estas imagens  irão fornecer os dados para que o sistema execute suas funcionalidades, como o gerenciamento das imagens, a identificação e pontuação das situações de risco (Processamento). E a saída do sistema será por meio de uma interface que interagirá com o operador da estação de solo.
+
+\subsection{Processo de Monitoramento}
+O processo de monitoramento do Sistema Unificado de Monitoramento (SUM), relativo ao modus operandi dos agentes do sistema, é ilustrado pelo diagrama a seguir:
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figuras/Processodemonitorament}
+\caption{Processo de Monitoramento}
+\label{img:Processo de Monitoramento}
+\end{figure}
+As atividades contempladas neste processo estão descritas abaixo:
+\\
+
+\textbf{Identificar comportamento ou atividade suspeita} - O processo é iniciado a partir da identificação de comportamento ou atividade suspeita por parte do balão de monitoramento, que leva em consideração fatores de risco que determinam se uma atividade é normal, duvidosa ou suspeita.
+\\
+
+\textbf{Emitir alerta à central de Monitoramento} - Nesta atividade o sistema do balão, após ter identificado uma atividade suspeita nas dependências do estacionamento, emiti um sinal de alerta à Central de monitoramento contatando o operador do sistema.
+\\
+
+\textbf{Avaliar possível atividade criminosa} - Nesta atividade o operador do sistema, após ter sido notificado pelo balão sobre uma atividade suspeita, acompanhará através das câmeras de vídeo do balão , em tempo real, a ação do suspeito, avaliando se esta é uma atividade criminosa.
+\\
+
+\textbf{Desativar alerta do balão de monitoramento} - Nesta atividade o operador do sistema, após ter recebido e avaliado o alerta de atividade suspeita emitido pelo balão e concluído que este não retrata uma atividade criminosa, desativará o alerta do balão para aquela ação em específico, encerrando o processo.
+\\
+
+\textbf{Alertar a equipe de Segurança} - Nesta atividade o operador do sistema, após ter concluído que o alerta do balão se trata de fato de uma atividade criminosa, irá contactar a equipe de Segurança em campo emitindo um alerta via rádio.
+\\
+
+\textbf{Averiguar a situação do local} - Nesta atividade a equipe de Segurança, após receber um alerta do operador do sistema sobre uma atividade criminosa, irá averiguar a situação , no local informado, para avaliar a possibilidade de intervenção e/ou impedimento da ação criminosa.
+\\
+
+\textbf{Tomar medidas cabíveis} - Nesta atividade a equipe de Segurança, após concluir que há possibilidade de intervenção e/ou impedimento da ação criminosa, tomará as medidas cabíveis para que o infrator seja detido, encerrando o processo.
+\\
+
+\textbf{Contactar as autoridades locais} - Nesta atividade a equipe de Segurança, após concluir que não há possibilidade de intervenção e/ou impedimento da ação criminosa por quaisquer razões, irá contactar as Autoridades locais responsáveis para que estes tomem as medidas cabíveis à situação.
+\\
+\par
+\textbf{Requisitos do Sistema de Monitoramento}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Sigla}        & \textbf{Descricao} \\ \hline
+NEC     & Necessidade                      \\ \hline
+CAR   	& Característica				   \\ \hline
+UC  	& Casos de uso                     \\ \hline
+RNF 	& Requisito Não-Funcional          \\ \hline
+
+\end{tabular}
+\caption{Requisitos do Sistema de Monitoramento}
+\label{Requisitos do Sistema de Monitoramento}
+\end{table}
+
+\textbf{Necessidades}
+\par
+A partir do processo de monitoramento descrito no tópico acima abstraiu-se as necessidades dos agentes do sistema.
+
+As necessidades são:
+\begin{itemize}
+	\item NEC01 - O operador do sistema precisa receber um alerta do sistema de monitoramento quando houver uma atividade suspeita ocorrendo no estacionamento.
+	\item NEC02 - O operador do sistema precisa visualizar em tempo real a ação do suspeito através das câmeras do balão de monitoramento.
+	\item NEC03 - O operador do sistema precisa conseguir aproximar a imagem de forma a ser possível enxergar detalhes da ação do suspeito.
+	\item NEC04 - O operador do sistema precisa visualizar áreas específicas do estacionamento para acompanhar o que ocorre em cada setor.
+\end{itemize}
+
+\textbf{Características}
+\par
+As características deviradas a partir das necessidades dos agentes do sistema são:
+\begin{itemize}
+	\item CAR01 - O sistema irá prover alertas de atividade suspeita na interface do usuário.
+	\item CAR02 - O sistema deve permitir que um alerta de atividade suspeita seja desativado.
+	\item CAR03 - O sistema deve permitir o acesso às câmeras de vídeo do balão de monitoramento.
+\end{itemize}
