@@ -128,6 +128,7 @@ Cada balão portará 1 câmera direcionada para a região em que se efetuará a 
 \begin{itemize}
 	\item 5MP.
 	\item Vídeo: 1080 p.
+	\item Abertura (F): 2.9
 	\item Distância Focal: 3.29 mm.
 	\item Diagonal: 72.4 mm.
 	\item Dimensões: 25 mm x 24 mm x 6 mm.
@@ -161,6 +162,9 @@ A câmera foi escolhida dada a sua alta resolução, fácil interface com o Rasp
 	\item Preço: U\$27.88.
 \end{itemize}
 
+As câmeras serão fixadas ao balão, e por estarem acondicionadas em seus respectivos invólucros (caixas de proteção) deverão continuar operando perfeitamente sob temperatura ambiente
+entre 0 e 40$^{\circ}$C e umidade relativa do ar de até 90\%.
+
 \subsection{Estabilização da carga útil}
 
 Embora que a princípio o balão trabalhará com altitude fixa, este tem o grau de liberdade para mudar de orientação em torno dos eixos ZB, YB e XB (considera-se o sistema de referência Body Axes), figura \ref{img:eixosreferencia}. O sistema de referência nos eixos do corpo tem origem geralmente no centro de massa, e utilizada para referenciar aeronaves, neste caso será aplicado à payload do balão. Estas mudanças de orientação ocasionarão a rotações involuntárias de câmeras embarcadas no balão, dessa forma faz-se necessária a estabilização do movimento.
@@ -185,7 +189,8 @@ Para a estabilização do eixo YB pode ser utilizado um trilho para mover a posi
   \label{img:trilhoestrutura}
 \end{figure}
 
-No caso o eixo XB, a estabilização pode ser feita através da variação da altitude do balão em intervalos de distância pré-definidos. Essa variação da altitude pode ser feita através da retração e liberação do cabo na carretilha em solo. A instabilidade no eixo ZB não afetará significativamente a qualidade da imagem, desde que a estabilização nos outros dois eixos seja efetiva.  
+No caso o eixo XB, a estabilização pode ser feita através da variação da altitude do balão em intervalos de distância pré-definidos. Essa variação da altitude pode ser feita através da retração e liberação do cabo na carretilha em solo. A instabilidade no eixo ZB não afetará significativamente a qualidade da imagem, desde que a estabilização nos outros dois eixos seja efetiva.
+
 Uma provável automação efetuada pelo balão será a avaliação de sua própria segurança. Por meio de sensores de tensão no cabo (dinamômetro) preso na estrutura da figura \label{img:caboancoragem}, se esta aumentar acima de um nível critico, este será automaticamente recolhido por meio do rotor motorizado em solo, e a estação de solo será informada. Assim que o sensor em solo sinalizar normalidade na velocidade do vento este será novamente elevado.
 
 \begin{figure}[H]
@@ -235,25 +240,3 @@ Para ser controlado, esse motor requer um driver, o modelo escolhido, por se ade
 	\item Corrente suportada: 3 A.
 	\item Preço: U\$34.95.
 \end{itemize}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

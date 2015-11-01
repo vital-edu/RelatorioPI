@@ -2,21 +2,7 @@
 
 	Neste projeto será utilizada a câmera Waveshare OV5647 Night Vision. É uma câmera já voltada para sistemas de vigilância, muito utilizada em escritórios e shoppings.
 
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{|l|l|}
-			\hline
-			Resolução           & 1980x1080       \\ \hline
-			Quantidade de MP    & 5 MegaPixels \\ \hline
-			Sensor              & Infravermelho  \\ \hline
-			Alimentação         & 24Vac a 3$^a$  \\ \hline
-			Compressão de vídeo & H264/MJPEG     \\ \hline
-		\end{tabular}
-		\caption{Especificações da VIP E5120 IR fonte: \cite{mercadoLivreVIPE5120}}
-		\label{my-label}
-	\end{table}
-
-	Serão utilizadas, no total, 15 câmeras do modelo  Waveshare ov5647, e para manter um armazenamento dessa quantidade vídeo, seria necessário um HD realmente potente e para tanto será utilizado o Seagate Archive 8TB. Como o sistema funcionará  24x7, ou seja, 24 horas por 7 dias da semana, o servidor irá passar as imagens caso a situação seja considerada de riscos, as imagens serão para o HD a uma taxa de 1024 Kbps, em um mês (considerando um mês como 30 dias), será gasto um total de 4.63TB.
+	Serão utilizadas, no total, 15 câmeras do modelo  Waveshare ov5647, e para conseguir armazenar os videos gravados utilizaremos o HD Seagate Archive 8TB. Como o sistema funcionará  24x7, ou seja, 24 horas por 7 dias da semana, o servidor irá passar as imagens caso a situação seja considerada de riscos, as imagens irão para o HD a uma taxa de 1024 Kbps, em um mês (considerando um mês como 30 dias), será gasto um total de 4.63TB.
 
 \begin{table}[H]
 	\centering
@@ -58,10 +44,6 @@ Unidade de inicialização & Kingston HyperX 3k 480 GB                          
 \label{tab:configHardware}
 \end{table}
 
-As câmeras serão fixadas ao balão, quando acondicionadas em seus respectivos invólucros
-ou caixas de proteção. Deverão continuar operando perfeitamente sob temperatura ambiente
-entre 0 e 40$^{\circ}$C e umidade relativa do ar de até 90\%.
-
 Em tempos de muitas chuvas, ocorre uma grande variação de energia, devido às descargas
 elétricas de raios. Para que não se tenha o problema de o sistema parar de funcionar por falta de
 energia, e pela variação de energia, não chegar a queimar o sistema ou danificar o sistema,
@@ -90,19 +72,13 @@ Hardware              & 1        & R\$ 5.271,86         & R\$ 5.271,86    \\ \hl
 \label{table:precosComponentes}
 \end{table}
 
-\subsection{Sistema de comunicação Estação solo - Vigilante segurança}
+\subsection{Comunicação da estação de solo com a segurança}
 
-O sistema de comunicação será dado de maneira manual, ou seja, terá uma pessoa na estação
-de solo que será responsável por analisar os monitores de vigilância que  informam as áreas de possíveis situações de risco mediante a pontuação preestabelecida no sistema. E caso seja necessário, o operador irá alertar um segurança para que ele possa averiguar tal situação. O sistema será uma ferramenta para o operador, auxiliando e facilitando o monitoramento do estacionamento.
+O sistema de comunicação será dado de maneira manual, ou seja, terá uma pessoa na estação de solo que será responsável por analisar os monitores de vigilância que  informam as áreas de possíveis situações de risco mediante a pontuação preestabelecida no sistema. E caso seja necessário, o operador irá alertar um segurança para que ele possa averiguar tal situação. O sistema será uma ferramenta para o operador, auxiliando e facilitando o monitoramento do estacionamento.
 
-Essa comunicação será dada via voz, utilizando um rádio comunicador, ou walk talk. Este meio
-de comunicação é bem utilizado em sistemas de vigilância de escritórios, shoppings, em
- construções civis ou em operações de policiais e bombeiros.
+Essa comunicação será dada via voz, utilizando um rádio comunicador, ou walk talk. Este meio de comunicação é bem utilizado em sistemas de vigilância de escritórios, shoppings, em construções civis ou em operações de policiais e bombeiros.
 
-Os Walkie Talkies tem um alcance relativamente alto, exatamente o necessário para suprir a
-carência de sinal de celular presente na área da FGA, e este equipamento terá um alcance de
- 56km. Neste sistema de monitoramento será utilizado o rádio comunicador walk talk Cobra
-Cxr925 56km.
+Os Walkie Talkies tem um alcance relativamente alto, exatamente o necessário para suprir a carência de sinal de celular presente na área da FGA, e este equipamento terá um alcance de  56km. Neste sistema de monitoramento será utilizado o rádio comunicador walk talk Cobra Cxr925 56km.
 
 \begin{table}[H]
 \centering
