@@ -140,14 +140,14 @@ Cada balão portará 1 câmera direcionada para a região em que se efetuará a 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{figuras/RSP}
-  \caption{Waveshare OV5647 Night Vision em destaque.}
+  \caption[Waveshare OV5647 Night Vision em destaque]{Waveshare OV5647 Night Vision em destaque~\cite{amazon1}}
   \label{img:Waveshare}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{figuras/Painel}
-  \caption{Painel infra-vermelho.}
+  \caption[Painel infra-vermelho]{Painel infra-vermelho~\cite{amazon2}}
   \label{img:painel}
 \end{figure}
 
@@ -207,14 +207,33 @@ O funcionamento completo do sistema de estabilização se dará da seguinte form
 
 O reaction wheel escolhido é o da companhia Clyde Space possuindo as seguintes especificações técnicas:
 
-!!!!!!!! TABELAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA !!!!!!
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|c|c|l|}
+	\hline
+	\rowcolor[HTML]{C0C0C0}
+	\textbf{Característica}          & \textbf{Valor} & \textbf{Unidades} & \textbf{Notas}        \\ \hline
+	Máxima velocidade volante        & 66500          & rpm               & @28 V                 \\ \hline
+	Torque máximo à 6500 rpm         & 26             & mNm               & @28 V                 \\ \hline
+	Torque máximo até 2500 rpm       & 40             & mNm               & @28 V                 \\ \hline
+	Faixa de temperatura em operação & -20 a 50       & ºC                & \multicolumn{1}{c}{-} \\ \hline
+	Faixa de temperatura em repouso  & -30 a 60       & ºC                & \multicolumn{1}{c}{-} \\ \hline
+	Consumo quando inativo           & 1.5            & W                 & @28 V                 \\ \hline
+	Consumo sem carga                & \textless 12   & W                 & @28 V                 \\ \hline
+	Consumo em torque máximo         & \textless 28   & W                 & @28 V                 \\ \hline
+	Inércia do disco                 & 0.001766969    & kg*$m^{2}$        & \multicolumn{1}{c}{-} \\ \hline
+	Massa total do dispositivo       & 1.5            & Kg                & \multicolumn{1}{c}{-} \\ \hline
+	\end{tabular}
+	\caption[Especificação do Reaction Wheel]{Especificação do Reaction Wheel~\cite{clyde}}
+	\label{tab:reactionWheel}
+\end{table}
 
 Para fazer a bexiga se locomover no trilho, faz-se necessária a utilização de um motor de passo. O motor escolhido foi o de modelo AK23/R100F6FN1.8-G10-LINIX com caixa de redução, devido ao torque, dimensões e consumo.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{figuras/M}
-  \caption{Motor de Passo AK23/R100F6FN1.8-G10-LINIX .}
+  \caption[Motor de Passo AK23/R100F6FN1.8-G10-LINIX]{Motor de Passo AK23/R100F6FN1.8-G10-LINIX~\cite{robocore}}
   \label{img:motorpasso}
 \end{figure}
 
@@ -229,7 +248,7 @@ Dados técnicos do motor:
 	\item Preço: R\$359.00.
 \end{itemize}
 
-Para ser controlado, esse motor requer um driver, o modelo escolhido, por se adequar as especificações técnicas do motor foi o SparkFun AutoDriver - Stepper Motor Driver com as seguintes especificações [5]:
+Para ser controlado, esse motor requer um driver, o modelo escolhido, por se adequar as especificações técnicas do motor foi o SparkFun AutoDriver - Stepper Motor Driver com as seguintes especificações~\cite{pololu}:
 
 \begin{itemize}
 	\item Detecção de superaquecimento.
