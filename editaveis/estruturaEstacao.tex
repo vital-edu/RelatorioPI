@@ -101,12 +101,7 @@ Para o armazenamento se tornar eficiente e confiável, além de resiliente, ser�
 padrão RAID(\textbf{Redundant Array of Independent Disks}) em seu nível um também conhecido por
 Mirror.
 
-Todas as informações vindas processadas para armazenamento serão copiadas
-simultaneamente em dois HDs, reduzindo a performance porém mantendo assim a segurança,
-pois caso haja algum problema técnico em um dos armazenamentos, não haverá nenhuma
-perda de informação. Neste projeto serão utilizados 4 Seagate® Vídeo 3.5 HDD para o
-armazenamento das imagens do monitoramento, formando 2 pares de HDs, que serão
-redundantes \cite{raid}.
+Todas as informações vindas processadas para armazenamento serão copiadas simultaneamente em dois HDs, reduzindo a performance porém mantendo assim a segurança, pois caso haja algum problema técnico em um dos armazenamentos, não haverá nenhuma perda de informação. Neste projeto serão utilizados 4 Seagate® Vídeo 3.5 HDD para o armazenamento das imagens do monitoramento, formando 2 pares de HDs, que serão redundantes \cite{raid}.
 
 Cada par será capaz de armazenar informações por 30 dias, uma vez cheio as informações passarão a ser armazenadas no par ocioso, formando assim um total de 60 dias de armazenamento de informação, ao final deste período, informações armazenadas serão a ser eliminadas, sendo assim necessário realizar cópias para outros dispositivos caso seja necessário o uso em um período posterior.O tempo em média para recuperação das imagens será de uma a duas horas.
 
@@ -169,7 +164,7 @@ O processo de monitoramento do Sistema Unificado de Monitoramento (SUM), relativ
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{figuras/Processodemonitorament}
+\includegraphics[width=1\textwidth]{figuras/Processodemonitorament}
 \caption{Processo de Monitoramento}
 \label{img:Processo de Monitoramento}
 \end{figure}
