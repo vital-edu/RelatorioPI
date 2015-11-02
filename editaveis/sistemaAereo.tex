@@ -608,21 +608,29 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	Serão utilizados cinco balões, que serão posicionados de acordo com a seguinte configuração: dois balões estarão em cima da Unidade de Ensino e Docência (UED) e outros dois balões no terraço na Unidade Acadêmica (UAC). Para estes balões, dois cabos estarão fixados no topo do prédio (pontos B e C na figura) e um terceiro cabo será preso numa haste (pontos C) de 10 m de altura que ficará a uma determinada distância dos prédios. O quinto balão ficará posicionado em cima do restaurante universitário (RU), onde dois cabos serão fixados em cima do RU (pontos B e D) e o terceiro cabo será preso a uma haste (ponto C) que possui a altura do restaurante universitário.
 
-	Para que o balão fique em uma posição de equilíbrio o sistema de equações abaixo deve ser respeitado.
+	Para que o balão fique em uma posição de equilíbrio o sistema de equações \eqref{eqn:sistemaEq}.
 
-	$\left [ - \frac{x_{b}}{L_{B}}T_{AC} - \frac{Y-Y_{p}}{L_{b}}T_{AB}0 - \frac{x_{c}}{L_{C}}T_{AB} - \frac{Y-Y_{h}}{L_{C}}T_{AC} \frac{Z_{c}}{L_{C}}T_AC0 \right ]$
+	\begin{equacao}
+		\begin{equation}
+			\left [ - \frac{x_{b}}{L_{B}} \cdot T_{AC} - \frac{Y-Y_{p}}{L_{b}} \cdot T_{AB} \cdot 0 - \frac{x_{c}}{L_{C}} \cdot T_{AB} - \frac{Y-Y_{h}}{L_{C}} \cdot T_{AC} \cdot \frac{Z_{c}}{L_{C}} \cdot T_{AC} \cdot 0 \right ]
+		\end{equation}
+		\caption{Posição de equilíbrio do balão}
+		\label{eqn:sistemaEq}
+	\end{equacao}
 
-	Onde:\\
-$L_{B}$: Comprimento do cabo do ponto A até o ponto B\\
-$L_{C}$: Comprimento do cabo do ponto A até o ponto C\\
-$L_{D}$: Comprimento do cabo do ponto A até o ponto D\\
-$E_{L}$: Empuxo líquido\\
-$F_{D}$: Força de arrasto\\
-$F_{dx}$: Componente - x da força aerodinâmica\\
-$F_{dz}$: Componente – z da força aerodinâmica\\
-$Y$: Altura do balão\\
-$Y_{p}$: Altura do prédio\\
-$Y_{h}$: Altura da haste\\
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{L_{B}}$] = Comprimento do cabo do ponto A até o ponto B
+		\item[$\boldsymbol{L_{C}}$] = Comprimento do cabo do ponto A até o ponto C
+		\item[$\boldsymbol{L_{D}}$] = Comprimento do cabo do ponto A até o ponto D
+		\item[$\boldsymbol{E_{L}}$] = Empuxo líquido
+		\item[$\boldsymbol{F_{D}}$] = Força de arrasto
+		\item[$\boldsymbol{F_{dx}}$] = Componente - x da força aerodinâmica
+		\item[$\boldsymbol{F_{dz}}$] = Componente - z da força aerodinâmica
+		\item[$\boldsymbol{Y}$] = Altura do balão
+		\item[$\boldsymbol{Y_{p}}$] = Altura do prédio
+		\item[$\boldsymbol{Y_{h}}$] = Altura da haste
+	\end{description}
 
 A melhor abordagem para resolver este sistema é definir aonde estarão fixados os cabos ($x_{b}$, $x_{c}$, $z_{c}$, $z_{d}$) e estabelecer o comprimento de cada cabo ($L_{B}$, $L_{C}$, $L_{D}$), logo as incógnitas serão as forças em cada cabo ($T_{AB}$, $T_{AC}$, $T_{AD}$). Portanto, deve-se escolher as posições dos cabos que forneçam valores de forças fisicamente possíveis. Outro ponto importante é que a força do cabo que é fixado na haste seja bem inferior em relação as forças dos cabos preso aos prédios, logo será necessário o uso de uma haste com simples resistência a tração, ao invés de uma haste com boas propriedades mecânica no então de custo elevado.
 
@@ -631,7 +639,7 @@ A melhor abordagem para resolver este sistema é definir aonde estarão fixados 
 	O empuxo líquido, $E_{L}$, foi calculado anteriormente, o seu valor é de 800 N. A forca de arrasto, $F_{D}$ é de aproximadamente 880 N. Portando a força total exercida nos cabos é de aproximadamente 1200 N. Assume-se que a força de arrasto é dividida igualmente entre a componente x e z: $F_{dx}$ = 440 N e $F_{dz}$ = 440 N.
 
 	\begin{itemize}
-		\item  Altura do balão = 10 m
+		\item Altura do balão = 10 m
  		\item Altura do UED = 10 m
  		\item Altura do UAC = 10 m
  		\item Altura do RU = 4 m
