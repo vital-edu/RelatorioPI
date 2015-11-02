@@ -255,13 +255,13 @@
 		\label{eqn:calcBalancoForca}
 	\end{equacao}
 
-	Substituindo \eqref{eqn:calcEmpuxo}, \eqref{eqn:calcMassaHelio}, \eqref{eqn:calcMassaMaterial} em \eqref{eqn:calcBalancoForca}, temos a equação \eqref{eqn:resultante1}.
+	Substituindo \eqref{eqn:calcEmpuxo}, \eqref{eqn:calcMassaHelio}, \eqref{eqn:calcMassaMaterial} em \eqref{eqn:calcBalancoForca}, temos a equação \eqref{eqn:eqResultante1}.
 
 	\begin{equacao}
 		\begin{equation}
 			\rho_{ar} \cdot g \cdot V = g(M_{h} + M_{p} + M_{m})
 		\end{equation}
-		\caption{Equação resultante de \eqref{eqn:calcEmpuxo}, \eqref{eqn:calcMassaHelio}, \eqref{eqn:calcMassaMaterial}}
+		\caption{Equação resultante de \eqref{eqn:calcEmpuxo}, \eqref{eqn:calcMassaHelio} e \eqref{eqn:calcMassaMaterial}}
 		\label{eqn:eqResultante1}
 	\end{equacao}
 
@@ -296,30 +296,34 @@
 
 \subsubsection{Cálculo Real do Volume do Balão}
 
- O  balão irá operar em uma faixa de altura entre 20 e 25 metros em relação ao solo, porém  o mesmo será fixado no alto dos prédios da Universidade de Brasília no Campus do Gama, esses prédios têm uma altura de 10 a 12 metros dependendo do prédio. Desta forma, foram decididos os pontos de fixação e calculado o tamanho dos cabos, e concluiu-se que os cabos deveriam ter no máximo 20 metros de comprimento.
-O cabo de aço escolhido tem um diâmetro de 6,4 mm e tem massa aproximada de 146 gramas por metro, um balão precisa de três cabos de sustentação de 20 metros cada. Desta forma o peso devido a massa dos cabos será:
+O  balão irá operar em uma faixa de altura entre 20 e 25 metros em relação ao solo, porém  o mesmo será fixado no alto dos prédios da Universidade de Brasília no Campus do Gama, esses prédios têm uma altura de 10 a 12 metros dependendo do prédio. Desta forma, foram decididos os pontos de fixação e calculado o tamanho dos cabos, e concluiu-se que os cabos deveriam ter no máximo 20 metros de comprimento.
 
-$(C \cdot m \cdot g) \cdot nc = (20 \cdot 0.146 \cdot 9,8 ) \cdot 3 = 86 N$
+O cabo de aço escolhido tem um diâmetro de 6,4 mm e tem massa aproximada de 146 gramas por metro, um balão precisa de três cabos de sustentação de 20 metros cada. Desta forma o peso devido a massa dos cabos está descrito na equação \eqref{eqn:pesoCabos}.
 
-Onde,
+\begin{equacao}
+	\begin{equation}
+		P_{c} = C \cdot m \cdot g \cdot n_{c} \implies 20 \cdot 0.146 \cdot 9,8 \cdot 3 = 86 N
+	\end{equation}
+	\caption{Peso dos cabos}
+	\label{eqn:pesoCabos}
+\end{equacao}
 
-\textbf{C} = comprimento do cabo
+Em que:
+\begin{description}
+	\item[$\boldsymbol{P_{c}}$] = peso dos cabos
+	\item[$\boldsymbol{C}$] = comprimento do cabo
+	\item[$\boldsymbol{m}$] = massa por unidade de comprimento
+	\item[$\boldsymbol{g}$] = aceleração da gravidade
+	\item[$\boldsymbol{n_{c}}$] = número de cabos
+\end{description}
 
-\textbf{m} = massa por unidade de comprimento
+O cabo de alimentação energética tem uma massa aproximada de 50 gramas por metro, como esse cabo não pode sofrer esforço mecânico, ele nunca  ficará tensionado e para isso seu comprimento deverá ser maior que o comprimento dos outros cabos. Para o cálculo do peso desse cabo seu comprimento será de 25 metros, procedendo da mesma forma no cálculo dos outros cabos temos: $25 \cdot 0.05 \cdot 9.8 = 13 N$. Portanto o peso total dos cabos será na faixa de 100 N.
 
-\textbf{g} =  aceleração da gravidade
-
-\textbf{nc} = número de cabos
-
-O cabo de alimentação energética tem uma massa aproximada de 50 gramas por metro, como esse cabo não pode sofrer esforço mecânico, ele nunca  ficará tensionado e para isso seu comprimento deverá ser maior que o comprimento dos outros cabos. Para o cálculo do peso desse cabo seu comprimento será de 25 metros, procedendo da mesma forma no cálculo dos outros cabos temos:
-
-$25 x 0.05x 9,8 = 13 N$
-
-Portanto o peso total dos cabos será na faixa de 100 N.
 Ainda existem peças que não foram levadas em consideração nessa conta como os mosquetões, sistema de estabilização entre outros. Admiti-se que essa carga extra não ultrapasse o valor de 20 N.
+
 O volume do balão diminuirá com com o passar dos dias, visto que a quantidade de matéria diminuirá a uma taxa de 7.9\% ao dia, e para não termos que descer o balão em um pequeno intervalo de tempo dobraremos o raio do balão, ficando com um valor de 3 metros. Por margem de segurança usaremos um envelope com 60 micrometros de espessura.
 
-A tabela abaixo mostra todos os valores de forças verticais atuantes no balão. Para o cálculo do empuxo considerou-se $D_{ar}$ = $1.11166 kg/m^3$, que é a densidade do ar a 1000m de altitude. Considerou-se $D_{helio} = 0.138 D_{ar}$ que é a massa específica do hélio.
+A tabela \ref{sub:empuxoLiquidoTempo} mostra todos os valores de forças verticais atuantes no balão. Para o cálculo do empuxo considerou-se $\rho_{ar}$ = $1.11166 kg/m^3$, que é a densidade do ar a 1000m de altitude. Considerou-se $\rho_{h} = 0.138 \rho_{ar}$, que é a massa específica do hélio.
 
 \begin{table}[H]
 	\centering
@@ -327,80 +331,136 @@ A tabela abaixo mostra todos os valores de forças verticais atuantes no balão.
 		\hline
 		\rowcolor[HTML]{FFFFFF}
 		{\color[HTML]{000000} \textbf{Forças}} & {\color[HTML]{000000} \textbf{Valores Numéricos (N)}} \\ \hline
-		Empuxo                                 & 1232,1                                                \\ \hline
+		Empuxo                                 & 1232.1                                                \\ \hline
 		Peso do Hélio                          & 170                                                   \\ \hline
-		Peso do material do envelope           & 62,5                                                  \\ \hline
+		Peso do material do envelope           & 62.5                                                  \\ \hline
 		Peso dos Cabos                         & 100                                                   \\ \hline
 		Peso Extra                             & 20                                                    \\ \hline
 		Peso da Payload                        & 100                                                   \\ \hline
 		Empuxo Líquido                         & 780                                                   \\ \hline
 	\end{tabular}
-	\caption{Forças Atuantes no Balão}
+	\caption[Forças Atuantes no Balão]{Forças Atuantes no Balão. Volume de $113.1 m^2$}
 	\label{tab:forcasAtuantes}
 \end{table}
 
 \subsection{Empuxo Líquido em Função do Tempo} % (fold)
-\label{sub:empuxo_l_quido_em_fun_o_do_tempo}
+\label{sub:empuxoLiquidoTempo}
 
-	A força resultante gerada por um  fluido e que atua nos corpos é denominada empuxo. Esta força líquida vertical, com sentido para cima, é o resultado do gradiente de pressão (Munson, 2004). O empuxo é dado pela seguinte fórmula:
+	A força resultante gerada por um  fluido e que atua nos corpos é denominada empuxo. Esta força líquida vertical, com sentido para cima, é o resultado do gradiente de pressão~\cite{munson}. O empuxo é dado pela equação \eqref{eqn:calcEmpuxo}.	O peso do gás utilizado é dado pela fórmula \eqref{eqn:pesoGas}.
 
-	$E = (rô)gV$ ,
+	\begin{equacao}
+		\begin{equation}
+			P = \rho \cdot g \cdot V
+		\end{equation}
+		\caption{Fórmula para calcular o peso do gás}
+		\label{eqn:pesoGas}
+	\end{equacao}
 
-	onde (rô) é a densidade do fluido, g é a aceleração da gravidade e V é o volume do fluido deslocado.
-	O peso do gás utilizado é dado pela seguinte fórmula:
+	Desta forma, a força $\Delta_{F}$ para cima do balão é dada pela equação \eqref{eqn:calcularForca}.
 
-	$P = (rô)g V$
+	\begin{equacao}
+		\begin{equation}
+			\Delta_{F} = g \cdot V \cdot (\rho_{ar} - \rho_{h})
+		\end{equation}
+		\caption{Fórmula para calcular a força $\Delta_{F}$}
+		\label{eqn:calcularForca}
+	\end{equacao}
 
-	Desta forma, a força (delta)F para cima do balão é
+	$\Delta_{F}$ depende do volume do balão. A quantidade de massa, em kilogramas, que sai pelo duto diariamente é diretamente proporcional a quantidade de matéria que sai. No caso do hélio temos $M_{m} = \frac{4g}{mol} = \frac{M_{g}}{n} \implies n = \frac{M_{g}}{4}$
 
-	$deltaF =  g V (rôar - rôHe)$
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{M_m}$] = massa molar
+		\item[$\boldsymbol{n}$] = número de mols
+		\item[$\boldsymbol{M_g}$] = massa em gramas
+	\end{description}
 
-	DeltaF depende do volume do balão.
+	Aplicando na equação \eqref{eqn:calcularForca}, obtemos a equação \eqref{eqn:massaFinal}.
 
-	 A quantidade de massa, em kilogramas, que sai pelo duto diariamente é diretamente proporcional a quantidade de matéria que sai. No caso do hélio temos:
+	\begin{equacao}
+		\begin{equation}
+			M_f = M_i \cdot 0.92086^t
+		\end{equation}
+		\caption{Calculo da massa final}
+		\label{eqn:massaFinal}
+	\end{equacao}
 
-		 $Mm = 4g/mol = Mk/n   == n = Mk/4$
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{m_f}$] = massa final
+		\item[$\boldsymbol{m_i}$] = massa inicial
+	\end{description}
 
-	Aplicando na Eq. (2.2.4) ,temos:
+	Como a massa é calculada como $m = \rho \cdot g \cdot V $, temos a equação \eqref{eqn:volumeFinal}.
 
-	$mf = mi (0.92086)^t$ ,
+	\begin{equacao}
+		\begin{equation}
+			V_f = V_i \cdot 0.92086^t
+		\end{equation}
+		\caption{Fórmula para calcular o volume final}
+		\label{eqn:volumeFinal}
+	\end{equacao}
 
-	 onde mf é a massa final e mi é a massa inicial.
-	Como a massa é calculada como:
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{V_f}$] = volume final
+		\item[$\boldsymbol{V_i}$] = volume inicial
+	\end{description}
 
-	$rô g V = m$,
+	Substituindo a equação \eqref{eqn:calcularForca} na	equação \eqref{eqn:volumeFinal} origina-se a equação \eqref{eqn:forcaLiq}.
 
-	temos:
+	\begin{equacao}
+		\begin{equation}
+			\Delta_F = \Delta_{Fi} \cdot 0.92086^t
+		\end{equation}
+		\caption{Cálculo da força líquida final}
+		\label{eqn:forcaLiq}
+	\end{equacao}
 
-	$Vf = Vi (0.92086)^t$,
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{\Delta_{Ff}}$] = força líquida final
+		\item[$\boldsymbol{\Delta_{Fi}}$] = força líquida inicial
+	\end{description}
 
-	 onde \textbf{Vf} é o volume final e \textbf{Vi} é o volume inicial
+	O empuxo líquido é dado pela soma de todas as forças verticais excluindo a força de tração nos cabos. Logo temos:
 
-	Substituindo a equação da força líquida \textbf{deltaF} nessa equação acima temos:
+	\begin{equacao}
+		\begin{equation}
+			E_l = \Delta_{Fi} - (P_c + P_m + P_p + P_e)
+		\end{equation}
+		\caption{Cálculo do empuxo líquido}
+		\label{eqn:empuxoLiq}
+	\end{equacao}
 
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{E_l}$] = empuxo líquido
+		\item[$\boldsymbol{P_c}$] = peso dos cabos
+		\item[$\boldsymbol{P_m}$] = peso do material do envelope
+		\item[$\boldsymbol{P_p}$] = peso da payload
+		\item[$\boldsymbol{P_e}$] = peso extra
+	\end{description}
 
-	$deltFf = deltaFi(0.92086)^t$
+	Substituindo a equação \eqref{eqn:forcaLiq} na equação \eqref{eqn:empuxoLiq} podemos saber a variação do empuxo líquido em função do tempo. Sabendo que $ P_c + P_m +	P_p + P_e = 283 N $  e  $\Delta_{Fi} = 0.862 \cdot 1.11166 \cdot 9.8 \cdot 113.1 = 1062.1 N$, obtemos a equação \eqref{eqn:varEmpuxoTempo}.
 
-	onde deltaFf é a força líquida final e deltaFi é a força líquida inicial.
+	\begin{equacao}
+		\begin{equation}
+			E_l = 1062.1 \cdot 0.92086^t - 283
+		\end{equation}
+		\caption{Cálculo da variação do empuxo líquido em função do tempo}
+		\label{eqn:varEmpuxoTempo}
+	\end{equacao}
 
-	 O empuxo líquido é dado pela soma de todas as forças verticais excluindo a força de tração nos cabos. Logo temos:
+	Através da equação \eqref{eqn:varEmpuxoTempo}, é possível estimar o tempo que levará para o balão esvaziar igualando o $E_l$ a zero e isolando o tempo, obtendo a equação \eqref{eqn:tempoBalaoEsvaziar}.
 
-	$El = deltaF - (Pc + Pm + Pp+Pe)$
-
-	onde \textbf{El} é o empuxo líquido, \textbf{Pc} é o peso dos cabos, \textbf{Pm} é o peso do material do envelope, \textbf{Pp} é o peso da payload, \textbf{Pe} é o peso extra.
-	Substituindo a primeira equação na segunda, podemos saber a variação do empuxo líquido no tempo. Sabendo que:
-
-	 $Pc + Pm + Pp+Pe = 283 N$   e
-
-	 $deltaFi = (0.862)(1,11166)(9.8)(113.1) = 1062.1 N$
-
-	temos:
-
-	 $El = 1062.1(0.92086)^t - 283$
-
-	Esta equação mostra a variação do empuxo líquido em função do tempo, desta forma, é possível estimar o tempo que levará para o balão esvaziar igualando o $E_l$ a zero e isolando o tempo.
-
-	$t = \frac{ln(283) – ln(1062.2)}{ln(0.92086} \Rightarrow t = 16 dias$
+	\begin{equacao}
+		\begin{equation}
+			t = \frac{{\ln 283} - {\ln 1062.2}}{\ln 0.92086} \implies t = 16 dias \\
+		\end{equation}
+		\caption{Cálculo do tempo gasto para o balão esvaziar}
+		\label{eqn:tempoBalaoEsvaziar}
+	\end{equacao}
 
 	portanto, após 16 dias o balão cairia. A figura \ref{img:empuxoLiquidoTempo} mostra o gráfico do empuxo líquido pelo tempo. O tempo ideal para reabastecer o balão com hélio é uma vez por semana, com esse tempo o balão ainda tem um empuxo líquido de 313.14 N.
 
@@ -422,7 +482,7 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	\begin{equacao}
 		\begin{equation}
-			F_{D} = \frac{1}{2} \rho_{a} \left | v_{w} - v_{b} \right |^{2} C_{D}A{b}
+			F_{d} = \frac{1}{2} \rho_{ar} \left | v_{w} - v_{b} \right |^{2} C_{d}A{b}
 		\end{equation}
 		\caption[Força de arrasto]{Força de Arrasto~\cite{yajima}}
 		\label{eqn:forcaArrasto}
@@ -430,7 +490,7 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	\begin{equacao}
 		\begin{equation}
-			F_{Y} = \frac{1}{2} \rho_{a} \left | v_{w} - v_{b} \right |^{2} C_{Y}A{b}
+			F_{y} = \frac{1}{2} \rho_{ar} \left | v_{w} - v_{b} \right |^{2} C_{y}A{b}
 		\end{equation}
 		\caption[Força lateral]{Força Lateral~\cite{yajima}}
 		\label{eqn:forcaLateral}
@@ -438,25 +498,23 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	Em que:
 	\begin{description}
-		\item[$\boldsymbol{F_{D}}$] = Força de Arrasto;
-		\item[$\boldsymbol{F_{Y}}$] = Força Lateral;
+		\item[$\boldsymbol{F_{d}}$] = Força de Arrasto;
+		\item[$\boldsymbol{F_{y}}$] = Força Lateral;
 		\item[$\boldsymbol{\rho_{a}}$] = Densidade do Ar;
-		\item[$\boldsymbol{C_{D}}$] = Coeficiente de Arrasto;
-		\item[$\boldsymbol{C_{Y}}$] = coeficiente de força lateral efetiva;
+		\item[$\boldsymbol{C_{d}}$] = Coeficiente de Arrasto;
+		\item[$\boldsymbol{C_{y}}$] = coeficiente de força lateral efetiva;
 		\item[$\boldsymbol{A_{b}}$] = Area Frontal.
 	\end{description}
 
 	Considerando que o balão de monitoramento deve permanecer parado, podemos considerar que a velocidade do balão é nula, e a força de arrasto e força lateral se darão apenas em função da velocidade do vento.
 
-	Para o calcula da força de arrasto e força lateral então é necessário conhecer a velocidade do vento que incidirá sobre o balão. Para determinar a velocidade do vento entramos no Banco de Dados Histórico do Instituto Nacional de Meteorologia(INMET), disponíveis no próprio site da instituição, que pode ser acessado clicando \href{www.inmet.gov.br}{AQUI}. Para termos um valor que nos desse uma margem de segurança analisamos os dados de 01/01/2005 a 01/01/2015. No período avaliado a maior velocidade do vento ocorrida no DF registrada foi de 17 m/s.
+	Para o calcula da força de arrasto e força lateral então é necessário conhecer a velocidade do vento que incidirá sobre o balão. Para determinar a velocidade do vento entramos no Banco de Dados Histórico do Instituto Nacional de Meteorologia~\cite{inmet}. Para termos um valor que nos desse uma margem de segurança analisamos os dados de 01/01/2005 a 01/01/2015. No período avaliado a maior velocidade do vento ocorrida no DF registrada foi de 17 m/s.
 
-	O Coeficiente de Arrasto e o coeficiente de força lateral está diretamente relacionado ao número de Reynolds. O número de Reynolds é um número adimensional usado em mecânica dos fluidos para o cálculo do regime de escoamento de determinado fluido dentro de um tubo ou sobre uma superfície.~\cite{bird}
-
-	Segundo \citeauthoronline{yajima} (\citeyear{yajima}), o número de Reynolds para um balão é dado pela equação \eqref{eqn:numeroReynolds}.
+	O Coeficiente de Arrasto e o coeficiente de força lateral está diretamente relacionado ao número de Reynolds. O número de Reynolds é um número adimensional usado em mecânica dos fluidos para o cálculo do regime de escoamento de determinado fluido dentro de um tubo ou sobre uma superfície.~\cite{bird}. Segundo \citeauthoronline{yajima} (\citeyear{yajima}), o número de Reynolds para um balão é dado pela equação \eqref{eqn:numeroReynolds}.
 
 	\begin{equacao}
 		\begin{equation}
-			Re_{b} = \frac{\rho_{a} D_{b} \mid v_{w} - v_{b} \mid}{\mu_{a}}
+			Re_{b} = \frac{\rho_{ar} D_{b} \mid V_{w} - V_{b} \mid}{\mu_{a}}
 		\end{equation}
 		\caption{Número de Reynolds para balão}
 		\label{eqn:numeroReynolds}
@@ -466,26 +524,29 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 	\begin{description}
 		\item[$\boldsymbol{Re_{b}}$] = Número de Reynolds;
 		\item[$\boldsymbol{D_{b}}$] = Diâmetro do Balão;
-		\item[$\boldsymbol{v_{w}}$] = Velocidade do Vento;
-		\item[$\boldsymbol{v_{b}}$] = Velocidade do Balão;
+		\item[$\boldsymbol{V_{w}}$] = Velocidade do Vento;
+		\item[$\boldsymbol{V_{b}}$] = Velocidade do Balão;
 		\item[$\boldsymbol{\mu_{a}}$] = coeficiente de viscosidade do Ar .
 	\end{description}
 
 	Considerando que o balão terá um diâmetro de 6m e a Brasília se encontra a uma altitude próxima a 1000m acima do nível do Mar. Temos que:
 
-	Densidade do Ar a 1km de altitude: $\rho_{a}$ = $1,11166 Kg/m^3$ - Tabela de atmosfera padrão~\cite{bird}
+	\begin{description}
+		\item[Densidade do Ar a 1km de altitude:] $\rho_{a}$ = $1,11166 Kg/m^3$ segundo a tabela de atmosfera padrão~\cite{bird};
+		\item[Diâmetro do Balão:] 6m;
+		\item[Velocidade máxima do vento observada:] 17 m/s;
+		\item[Viscosidade do Ar:] 0.01813 mPa.s~\cite{bird}.
+	\end{description}
 
-	Diâmetro do Balão: 6m
+	Logo, obtemos a equação \eqref{eqn:numeroReynoldsBalai}.
 
-	Velocidade máxima do vento observada: 17 m/s
-
-	Viscosidade do Ar : 0.01813 mPa.s~\cite{bird}
-
-	Logo:
-
-	Reb = $(1.11166 kg/m^3 X 6m X 17 m/s) / 0.01813 x 10^(-3) Pa.s$
-
-	$Reb = 6.354 x 10^6$
+	\begin{equacao}
+		\begin{equation}
+			Re_{e} = \frac{1.11166 kg/m^3 \cdot 6m \cdot 17 m/s}{0.01813 \cdot 10^{-3} Pa.s} \implies Re_{b} = 6.354 \cdot 10^6
+		\end{equation}
+		\caption{Número de Reynolds para balão}
+		\label{eqn:numeroReynoldsBalai}
+	\end{equacao}
 
 	A tabela \ref{img:coeficienteArrasto} mostra o coeficiente de arrasto do balão em função do número de Reynolds do fluido e do formato do balão. Para o número de Reynolds da ordem de 6 x 106  temos um coeficiente de arrasto de aproximadamente 0.2.
 
@@ -496,16 +557,11 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 		\label{img:coeficienteArrasto}
 	\end{figure}
 
-	Tendo em mão esses valores podemos então calcular a força máxima de arrasto que o balão estará sujeito. Temos que:
+	Tendo em mão esses valores podemos então calcular a força máxima de arrasto que o balão estará sujeito a partir da \eqref{eqn:forcaArrasto}, obtendo a equação \eqref{eqn:forcaArrastoMax}.
 
-	\begin{equacao}
+	\begin{equacao}[H]
 		\begin{equation}
-		\begin{gathered}
-			F_{D} = \frac{1}{2} \rho_{a} \mid V_{W} - V_{B} \mid^{2} C_{D} A_{b}\\
-			F_{Y} = \frac{2}{2} \rho_{a} \mid V_{W} - V_{B} \mid^{2} C_{Y} A_{b}\\
-			F_{D} = \frac{1}{2} \cdot 1.11166 \frac{Kg}{m^{3}} \cdot \left | 17m/s \right |^{2} \cdot 0.2 \cdot 28.273m^{2}\\
-			F_{D} = 908.2 N
-		\end{gathered}
+			F_{D} = \frac{1}{2} \cdot 1.11166 \frac{Kg}{m^{3}} \cdot \left | 17m/s \right |^{2} \cdot 0.2 \cdot 28.273m^{2} \implies F_{D} = 908.2 N
 		\end{equation}
 		\caption{Força máxima de arrasto que o balão estará sujeito}
 		\label{eqn:forcaArrastoMax}
@@ -513,21 +569,31 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	O coeficiente de força lateral efetiva para um balão que se encontra estacionário é de 0.18~\cite{ferguson}. Podemos observar que nas duas equações este é o único valor que se altera, logo temos que:
 
-	Fy = 817,38 N
+	\begin{equacao}[H]
+		\begin{equation}
+			F_y = 817.38 N
+		\end{equation}
+		\caption{Força máxima lateral que o balão estará sujeito}
+		\label{eqn:forcaLateralMax}
+	\end{equacao}
 
-	Temos então que sobre o Balão atuaram as seguintes forças:
+	Temos então que sobre o balão atuaram as seguintes forças:
 
-	Força de Arrasto: 908,2 N
+	\begin{description}
+		\item[Força de arrasto:] 908.2 N
+		\item[Força lateral:] 817.38 N
+		\item[Força de empuxo:] 800 N
+	\end{description}
 
-	Força Lateral: 817,38 N
+	O que dá origem a equação \eqref{eqn:forcaResultante}.
 
-	Força de Empuxo: 800 N
-
-	O que nos dá uma força resultante de:
-
-	$\textbf{FD}= \sqrt{908,22+ 817,382+8002N}$
-
-	\textbf{FD}=1460.458 N
+	\begin{equacao}
+		\begin{equation}
+			F_D = \sqrt{908.2^2 + 817.38^2 + 800^2} \implies F_D = 1460.458 N
+		\end{equation}
+		\caption{Força resultante}
+		\label{eqn:forcaResultante}
+	\end{equacao}
 
 \subsection{Posicionamento dos cabos}
 
