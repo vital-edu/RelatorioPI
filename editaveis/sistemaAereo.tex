@@ -235,7 +235,7 @@ As contas acima foram realizadas para que se tivesse uma ideia inicial do tamanh
  O  balão irá operar em uma faixa de altura entre 20 e 25 metros em relação ao solo, porém  o mesmo será fixado no alto dos prédios da Universidade de Brasília no Campus do Gama, esses prédios têm uma altura de 10 a 12 metros dependendo do prédio. Desta forma, foram decididos os pontos de fixação e calculado o tamanho dos cabos, e concluiu-se que os cabos deveriam ter no máximo 20 metros de comprimento.
 O cabo de aço escolhido tem um diâmetro de 6,4 mm e tem massa aproximada de 146 gramas por metro, um balão precisa de três cabos de sustentação de 20 metros cada. Desta forma o peso devido a massa dos cabos será:
 
-$(C x m x g) x nc = (20 x 0.146 x 9,8 ) x 3 = 86 N$
+$(C \cdot m \cdot g) \cdot nc = (20 \cdot 0.146 \cdot 9,8 ) \cdot 3 = 86 N$
 
 Onde,
 
@@ -255,7 +255,7 @@ Portanto o peso total dos cabos será na faixa de 100 N.
 Ainda existem peças que não foram levadas em consideração nessa conta como os mosquetões, sistema de estabilização entre outros. Admiti-se que essa carga extra não ultrapasse o valor de 20 N.
 O volume do balão diminuirá com com o passar dos dias, visto que a quantidade de matéria diminuirá a uma taxa de 7.9\% ao dia, e para não termos que descer o balão em um pequeno intervalo de tempo dobraremos o raio do balão, ficando com um valor de 3 metros. Por margem de segurança usaremos um envelope com 60 micrometros de espessura.
 
-A tabela abaixo mostra todos os valores de forças verticais atuantes no balão. Para o cálculo do empuxo considerou-se \textbf{ar}  = $1.11166 kg/m^3$, que é a densidade do ar a 1000m de altitude. Considerou-se $h = 0.138 ar$ que é a massa específica do hélio.
+A tabela abaixo mostra todos os valores de forças verticais atuantes no balão. Para o cálculo do empuxo considerou-se $D_{ar}$ = $1.11166 kg/m^3$, que é a densidade do ar a 1000m de altitude. Considerou-se $D_{helio} = 0.138 D_{ar}$ que é a massa específica do hélio.
 
 \begin{table}[H]
 	\centering
@@ -338,17 +338,16 @@ A tabela abaixo mostra todos os valores de forças verticais atuantes no balão.
 
 	$t = \frac{ln(283) – ln(1062.2)}{ln(0.92086} \Rightarrow t = 16 dias$
 
-	portanto, após 16 dias o balão cairia. A figura TAL mostra o gráfico do empuxo líquido pelo tempo. O tempo ideal para reabastecer o balão com hélio é uma vez por semana, com esse tempo o balão ainda tem um empuxo líquido de 313.14 N.
+	portanto, após 16 dias o balão cairia. A figura \ref{img:empuxoLiquidoTempo} mostra o gráfico do empuxo líquido pelo tempo. O tempo ideal para reabastecer o balão com hélio é uma vez por semana, com esse tempo o balão ainda tem um empuxo líquido de 313.14 N.
 
 	Uma observação importante é que esses cálculos realizados para predizer o comportamento do balão no tempo levam em consideração que todo dia exista uma variação térmica de cerca de 22 ºC, porém sabemos que esse fato não ocorre cotidianamente analisando os dados do INMET.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\textwidth]{figuras/empuxoLiquidoTempo}
-		\caption{Gráfico de Empuxo x Tempo}
+		\caption{Gráfico do empuxo líquido pelo tempo}
 		\label{img:empuxoLiquidoTempo}
 	\end{figure}
-% subsection empuxo_l_quido_em_fun_o_do_tempo (end)
 
 \subsection{Forças no Balão} % (fold)
 \label{sub:for_as_no_bal_o}
@@ -357,21 +356,21 @@ De acordo com YAJIMA(2009), a força \textbf{F} que atua no balão devido ao ven
 
 Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn:forcaLateral}.
 
-	\begin{Equacao}[H]
+	\begin{equacao}[H]
 		\begin{equation}
 			F_{D} = \frac{1}{2} \rho_{a} \left | v_{w} - v_{b} \right |^{2} C_{D}A{b}
 		\end{equation}
 		\caption[Força de arrasto]{Força de Arrasto~\cite{yajima}}
 		\label{eqn:forcaArrasto}
-	\end{Equacao}
+	\end{equacao}
 
-	\begin{Equacao}[H]
+	\begin{equacao}[H]
 		\begin{equation}
 			F_{Y} = \frac{1}{2} \rho_{a} \left | v_{w} - v_{b} \right |^{2} C_{Y}A{b}
 		\end{equation}
 		\caption[Força lateral]{Força Lateral~\cite{yajima}}
 		\label{eqn:forcaLateral}
-	\end{Equacao}
+	\end{equacao}
 
 	Em que:
 	\begin{description}
@@ -391,13 +390,13 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	Segundo \citeauthoronline{yajima} (\citeyear{yajima}), o número de Reynolds para um balão é dado pela equação \eqref{eqn:numeroReynolds}.
 
-	\begin{Equacao}[H]
+	\begin{equacao}[H]
 		\begin{equation}
 			Re_{b} = \frac{\rho_{a} D_{b} \mid V_{w} - V_{b} \mid}{\mu_{a}}
 		\end{equation}
 		\caption{Número de Reynolds para balão}
 		\label{eqn:numeroReynolds}
-	\end{Equacao}
+	\end{equacao}
 
 	Em que:
 	\begin{description}
@@ -424,18 +423,18 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	$Reb = 6.354 x 10^6$
 
-	A Tabela a seguir mostra o coeficiente de arrasto do balão em função do número de Reynolds do fluido e do formato do balão. Para o número de Reynolds da ordem de 6 x 106  temos um coeficiente de arrasto de aproximadamente 0,2.
+	A tabela \ref{img:coeficienteArrasto} mostra o coeficiente de arrasto do balão em função do número de Reynolds do fluido e do formato do balão. Para o número de Reynolds da ordem de 6 x 106  temos um coeficiente de arrasto de aproximadamente 0.2.
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{figuras/coeficienteArrasto}
-		\caption[Coeficiente de arrasto x número de Reynolds]{Coeficiente de arrasto x número de Reynolds~\cite{myers}}
+		\caption[Coeficiente de arrasto do balão em função do número de Reynolds do fluido e do formato do balão]{Coeficiente de arrasto do balão em função do número de Reynolds~\cite{myers}}
 		\label{img:coeficienteArrasto}
 	\end{figure}
 
 	Tendo em mão esses valores podemos então calcular a força máxima de arrasto que o balão estará sujeito. Temos que:
 
-	\begin{Equacao}[H]
+	\begin{equacao}[H]
 		\begin{equation}
 			\begin{multlined}
 				Re_{b} = \frac{\rho_{a} D_{b} \mid V_{w} - V_{b} \mid}{\mu_{a}}\\
@@ -445,7 +444,7 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 		\end{equation}
 		\caption{Força de arrasto máxima do balão}
 		\label{eqn:forcaArrastoMax}
-	\end{Equacao}
+	\end{equacao}
 
 	O coeficiente de força lateral efetiva para um balão que se encontra estacionário é de 0.18~\cite{ferguson}. Podemos observar que nas duas equações este é o único valor que se altera, logo temos que:
 
@@ -463,7 +462,7 @@ Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn
 
 	$\textbf{FD}= \sqrt{908,22+ 817,382+8002N}$
 
-	\textbf{FD}=1460,458 N
+	\textbf{FD}=1460.458 N
 
 \subsection{Posicionamento dos cabos}
 
