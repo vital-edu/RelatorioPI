@@ -3,11 +3,11 @@ A eletrônica embarcada do projeto tem como base 3 microcontroladores: o Arduino
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figuras/eletronicaembarcadasum}
-	\caption{Funcionamento geral da eletrônica embarcada no SUM.}
+	\caption{Funcionamento geral da eletrônica embarcada no SUM}
 	\label{img:eletronicaembarcadasum}
 \end{figure}
 
-A Figura \ref{img:eletronicaembarcadasum} mostra o funcionamento geral da eletrônica embarcada do projeto. Os sensores que auxiliarão na estabilização do balão serão: LM35(Temperatura), HMC5883L(Bússola), L3G4200D(movimento), ADXL345(acelerometro), BMP085(pressão) e DHT11(umidade). Estes sensores estarão conectados em um Arduino UNO que, por sua vez, interpretará os dados dos sensores e mandará suas informações em série para o Raspberry Pi, que também estará conectado a um painel composto por vários LEDs para iluminação em infravermelho, o Aweek. Por fim, O Raspberry Pi mandará as informações para o microcontrolador Intel Galileo Gen 2, indicando se será necessária a estabilização da estrutura, de acordo com a interpretação feita pelo Arduino. Caso seja necessária a estabilização, o Galileo decidirá se ativará um motor de passo para realizar a estabilização através do trilho situado na payload, ou se ativará o atuador Reaction Wheel.
+A figura \ref{img:eletronicaembarcadasum} mostra o funcionamento geral da eletrônica embarcada do projeto. Os sensores que auxiliarão na estabilização do balão serão: LM35(Temperatura), HMC5883L(Bússola), L3G4200D(movimento), ADXL345(acelerometro), BMP085(pressão) e DHT11(umidade). Estes sensores estarão conectados em um Arduino UNO que, por sua vez, interpretará os dados dos sensores e mandará suas informações em série para o Raspberry Pi, que também estará conectado a um painel composto por vários LEDs para iluminação em infravermelho, o Aweek. Por fim, O Raspberry Pi mandará as informações para o microcontrolador Intel Galileo Gen 2, indicando se será necessária a estabilização da estrutura, de acordo com a interpretação feita pelo Arduino. Caso seja necessária a estabilização, o Galileo decidirá se ativará um motor de passo para realizar a estabilização através do trilho situado na payload, ou se ativará o atuador Reaction Wheel.
 
 Raspberry Pi estará sendo utilizado também para transmitir as imagens em tempo real para a central. Ele receberá os dados da câmera, através do seu conector específico para câmera, e cada balão passará as informações para o balão mais próximo da central, a comunicação entre eles será sem fio montando uma rede intranet. O balão que esta recebendo tudo, transmitirá para a central através de um cabo de ethernet e o computador que recebe realizará todo o procedimento desejado com as imagens.
 
@@ -115,7 +115,7 @@ Nesses conversores, quanto maior o número bits de saída, melhor ele será. Por
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{figuras/ADC}
-  \caption{Ilustração da escala de bits.}
+  \caption[Ilustração da escala de bits]{Ilustração da escala de bits~\cite{conversoresad}}
   \label{img:escaladebits}
 \end{figure}
 
