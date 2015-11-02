@@ -354,65 +354,69 @@ A tabela abaixo mostra todos os valores de forças verticais atuantes no balão.
 \label{sub:for_as_no_bal_o}
 
 De acordo com YAJIMA(2009), a força \textbf{F} que atua no balão devido ao vento relativo tem duas componentes: A força de arrasto, que atua paralelamente a direção do vento relativo, e a força lateral, que atua perpendicular à direção do vento.
-Tais forças são descritas pelas equações:
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.5\textwidth]{figuras/equacoesArrasto}
-		\caption[Número de Reynolds para Balão]{Número de Reynolds para Balão~\cite{yajima}}
-		\label{img:equacoesArrasto}
-	\end{figure}
+Tais forças são descritas pelas equações \eqref{eqn:forcaArrasto} \eqref{eqn:forcaLateral}.
 
-	Onde:
+	\begin{Equacao}[H]
+		\begin{equation}
+			F_{D} = \frac{1}{2} \rho_{a} \left | v_{w} - v_{b} \right |^{2} C_{D}A{b}
+		\end{equation}
+		\caption[Força de arrasto]{Força de Arrasto~\cite{yajima}}
+		\label{eqn:forcaArrasto}
+	\end{Equacao}
 
-	\textbf{Fd} = Força de Arrasto;
+	\begin{Equacao}[H]
+		\begin{equation}
+			F_{Y} = \frac{1}{2} \rho_{a} \left | v_{w} - v_{b} \right |^{2} C_{Y}A{b}
+		\end{equation}
+		\caption[Força lateral]{Força Lateral~\cite{yajima}}
+		\label{eqn:forcaLateral}
+	\end{Equacao}
 
-	\textbf{Fy} = Força Lateral;
-
-	\textbf{Pa} = Densidade do Ar;
-
-	\textbf{Cd} = Coeficiente de Arrasto;
-
-	\textbf{Cy} = coeficiente de força lateral efetiva;
-
-	\textbf{Ab} = Area Frontal.
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{F_{D}}$] = Força de Arrasto;
+		\item[$\boldsymbol{F_{Y}}$] = Força Lateral;
+		\item[$\boldsymbol{\rho_{a}}$] = Densidade do Ar;
+		\item[$\boldsymbol{C_{D}}$] = Coeficiente de Arrasto;
+		\item[$\boldsymbol{C_{Y}}$] = coeficiente de força lateral efetiva;
+		\item[$\boldsymbol{A_{b}}$] = Area Frontal.
+	\end{description}
 
 	Considerando que o balão de monitoramento deve permanecer parado, podemos considerar que a velocidade do balão é nula, e a força de arrasto e força lateral se darão apenas em função da velocidade do vento.
 
 	Para o calcula da força de arrasto e força lateral então é necessário conhecer a velocidade do vento que incidirá sobre o balão. Para determinar a velocidade do vento entramos no Banco de Dados Histórico do Instituto Nacional de Meteorologia(INMET), disponíveis no próprio site da instituição, que pode ser acessado clicando \href{www.inmet.gov.br}{AQUI}. Para termos um valor que nos desse uma margem de segurança analisamos os dados de 01/01/2005 a 01/01/2015. No período avaliado a maior velocidade do vento ocorrida no DF registrada foi de 17 m/s.
 
-	O Coeficiente de Arrasto e o coeficiente de força lateral está diretamente relacionado ao número de Reynolds. O número de Reynolds é um número adimensional usado em mecânica dos fluidos para o cálculo do regime de escoamento de determinado fluido dentro de um tubo ou sobre uma superfície (BIRD, 2004).
+	O Coeficiente de Arrasto e o coeficiente de força lateral está diretamente relacionado ao número de Reynolds. O número de Reynolds é um número adimensional usado em mecânica dos fluidos para o cálculo do regime de escoamento de determinado fluido dentro de um tubo ou sobre uma superfície.~\cite{bird}
 
-	Segundo YAJIMA(2009), o número de Reynolds para um balão é dado pela equação:
+	Segundo \citeauthoronline{yajima} (\citeyear{yajima}), o número de Reynolds para um balão é dado pela equação \eqref{eqn:numeroReynolds}.
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.5\textwidth]{figuras/equacaoNumeroDeRey}
-		\caption[Número de Reynolds para Balão]{Número de Reynolds para Balão~\cite{yajima}}
-		\label{img:equacaoNúmeroDeRey}
-	\end{figure}
+	\begin{Equacao}[H]
+		\begin{equation}
+			Re_{b} = \frac{\rho_{a} D_{b} \mid V_{w} - V_{b} \mid}{\mu_{a}}
+		\end{equation}
+		\caption{Número de Reynolds para balão}
+		\label{eqn:numeroReynolds}
+	\end{Equacao}
 
-	Onde:
-
-	\textbf{Reb} = Número de Reynolds;
-
-	\textbf{Db} = Diâmetro do Balão;
-
-	\textbf{Vw} = Velocidade do Vento;
-
-	\textbf{Vb} = Velocidade do Balão;
-
-	\textbf{“Mí”a} = coeficiente de viscosidade do Ar .
+	Em que:
+	\begin{description}
+		\item[$\boldsymbol{Re_{b}}$] = Número de Reynolds;
+		\item[$\boldsymbol{D_{b}}$] = Diâmetro do Balão;
+		\item[$\boldsymbol{v_{w}}$] = Velocidade do Vento;
+		\item[$\boldsymbol{v_{b}}$] = Velocidade do Balão;
+		\item[$\boldsymbol{\mu_{a}}$] = coeficiente de viscosidade do Ar .
+	\end{description}
 
 	Considerando que o balão terá um diâmetro de 6m e a Brasília se encontra a uma altitude próxima a 1000m acima do nível do Mar. Temos que:
 
-	Densidade do Ar a 1km de altitude: “Rô”a = $1,11166 Kg/m^3$ - Tabela de atmosfera padrão  (BIRD,2004)
+	Densidade do Ar a 1km de altitude: $\rho_{a}$ = $1,11166 Kg/m^3$ - Tabela de atmosfera padrão~\cite{bird}
 
 	Diâmetro do Balão: 6m
 
 	Velocidade máxima do vento observada: 17 m/s
 
-	Viscosidade do Ar : 0,01813 mPa.s (BIRD,2004)
+	Viscosidade do Ar : 0,01813 mPa.s~\cite{bird}
 
 	Logo:
 
@@ -425,23 +429,27 @@ Tais forças são descritas pelas equações:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{figuras/coeficienteArrasto}
-		\caption{Coeficiente de Arrasto x Número de Reynolds}
+		\caption[Coeficiente de arrasto x número de Reynolds]{Coeficiente de arrasto x número de Reynolds~\cite{myers}}
 		\label{img:coeficienteArrasto}
 	\end{figure}
 
 	Tendo em mão esses valores podemos então calcular a força máxima de arrasto que o balão estará sujeito. Temos que:
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.5\textwidth]{figuras/formulasCoeficienteArrasto}
-		\caption{}
-		\label{img:formulasCoeficienteArrasto}
-	\end{figure}
+	\begin{Equacao}[H]
+		\begin{equation}
+			\begin{multlined}
+				Re_{b} = \frac{\rho_{a} D_{b} \mid V_{w} - V_{b} \mid}{\mu_{a}}\\
+				F_{D} = \frac{1}{2} \rho_{a} \mid V_{W} - V_{B} \mid^{2} C_{D} A_{b}\\
+				F_{Y} = \frac{2}{2} \rho_{a} \mid V_{W} - V_{B} \mid^{2} C_{Y} A_{b}
+			\end{multlined}
+		\end{equation}
+		\caption{Força de arrasto máxima do balão}
+		\label{eqn:forcaArrastoMax}
+	\end{Equacao}
 
+	O coeficiente de força lateral efetiva para um balão que se encontra estacionário é de 0.18~\cite{ferguson}. Podemos observar que nas duas equações este é o único valor que se altera, logo temos que:
 
-	O coeficiente de força lateral efetiva para um balão que se encontra estacionário é de 0.18 (FERGUSON,1981). Podemos observar que nas duas equações este é o único valor que se altera, logo temos que:
-
-	Fy=817,38 N
+	Fy = 817,38 N
 
 	Temos então que sobre o Balão atuaram as seguintes forças:
 
