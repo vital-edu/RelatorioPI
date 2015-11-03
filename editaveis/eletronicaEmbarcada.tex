@@ -259,3 +259,91 @@ Para ser controlado, esse motor requer um driver, o modelo escolhido, por se ade
 	\item Corrente suportada: 3 A.
 	\item Preço: U\$34.95.
 \end{itemize}
+
+\subsection{Interação hardware-software}
+
+	\subsubsection{Arduino UNO}
+
+		O Arduino será programado através de sua IDE, que permite que sketches sejam criados e mandados para a placa. A linguagem de programação é modelada segundo a linguagem Wiring, baseada em C e C++. O código é traduzido para a linguagem C e é transmitido para o compilador, que realiza a interpretação dos comandos para uma linguagem que o microncontrolador possa entender.
+
+		Ao realizar o upload do código para a placa, o Arduino não precisa mais estar conectado ao computador. Ele executará o sketch criado, contado que esteja conectado a uma fonte de alimentação.~\cite{embarcados1}
+
+		\begin{figure}[H]
+		  \centering
+		  \includegraphics[width=1\textwidth]{figuras/ATMEGA}
+		  \caption[Esquemático dos pinos do microcontrolador do Arduino]{Esquemático dos pinos do microcontrolador do Arduino~\cite{embarcados2}}
+		  \label{img:atmega}
+		\end{figure}
+
+		Os pinos, de entrada e saída de informações, do Arduino UNO terão as seguintes conexões:
+		\begin{description}
+			\item[A0 e A1:] Entrada de dados do magnetômetro HMC5883L;
+			\item[A2 e A3:] Entrada de dados do giroscópio L3G4200D;
+			\item[A4 e A5:] Entrada de dados do acelerômetro ADXL345;
+			\item[D2 e D3:] Entrada de dados do barômetro BMP085.
+		\end{description}
+
+		De acordo com a análise desses três sensores inerciais, o microcontrolador poderá comunicar-se com o Raspberry para que este informe ao Galileo e, por fim, seja ativado o sistema de estabilização do balão.
+
+		D4 e D5: Entrada de dados do sensor 1 e do sensor 2 de temperatura LM35. O sensor 1 será utilizado exclusivamente para o monitoramento do aquecimento do sistema embarcado, verificando se houve sobrecarga dos componentes. O sensor 2 captará a temperatura do gás do balão.
+
+		A comunicação entre esses sensores e o microcontrolador se dará da seguinte forma: de acordo com o dado obtido do ambiente, o sensor informará um determinado valor de tensão em seu terminal que estará conectado aos pinos de entrada de informação. O microcontrolador, de acordo com o que foi programado, relacionará este valor de tensão com o seu significado real medido pelo sensor.
+
+		O Arduino processará os dados obtidos pelos sensores e verificará se há algo anormal com sistema. Caso haja algum problema, o Arduino transmitirá essas informações para que o Raspberry PI 2 possa enviar um alerta à base de solo, tendo em vista que esses estarão conectado por uma comunicação serial. Caso o sistema não apresente comportamento inadequado, o Arduino transmitirá apenas os dados de interesse do cliente.
+
+	\subsubsection{Intel Galileo Gen 2}
+
+		Sua programação será realizada no mesmo ambiente de desenvolvimento (IDE) do Arduino. Essa placa roda o sistema operacional Linux, que vem previamente instalado, configurado e com as bibliotecas de software do Arduino, o que torna mais viável sua programação na mesma IDE.~\cite{embarcados3}
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{figuras/galileo2}
+			\caption[Esquemático das entradas e saídas do Intel Galileo]{Esquemático das entradas e saídas do Intel Galileo~\cite{embarcados3}}
+			\label{img:galileo2}
+		\end{figure}
+
+		O Galileo será usado exclusivamente para a estabilização do balão, logo este estará conectado apenas ao atuador Reaction Wheel, ao motor de passo, responsável pela estabilização através do trilho, e ao Raspberry PI 2. A comunicação com o Raspberry será necessária, visto que este estará conectado ao Arduino que, por sua vez, notificará qualquer mudança no sistema captada pelos sensores.
+
+		Os pinos de entrada e saída de informações do Intel Galileo Gen 2 terão as seguintes conexões:
+		\begin{description}
+			\item[IO0, IO1, IO2 e IO3:] Estarão conectados ao controlador do atuador Reaction Wheel. A mudança de estado lógico, nestas entradas, indicará que os sensores captaram mudanças climáticas que provocaram a desestabilização do balão e que o atuador será ativado.
+			\item[IO4, IO5, IO6 e IO7:] Estarão conectados ao motor de passo que realizará a estabilização através do trilho da estrutura. A mudança de estado lógico dessas entradas segue o mesmo princípio explicado no item anterior, porém estes pinos realizarão a estabilização via controle do trilho.
+		\end{description}
+
+	\subsubsection{Raspberry Pi 2}
+
+		O Raspberry PI 2 será programado em Python pois, além de sua praticidade, é o recomendado pela Fundação Raspberry Pi mas qualquer linguagem que compilar para ARMv6 (Pi 1) ou ARMv7 (Pi 2) pode ser usada. Sendo que C, C++, Java, Scratch, e Ruby já vêm previamente instalados.~\cite{raspberrypi}
+
+		O Raspberry estará conectado à câmera do balão através de seu conector específico para câmera, para a realização do processamento de imagens. Também estará conectado ao Arduino e ao Galileo, através de uma comunicação serial, a fim de transmitir os dados obtidos pelos sensores, juntamente com as imagens.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{figuras/raspberryPi2}
+			\caption[Entradas e saídas do Raspberry Pi 2]{Entradas e saídas do Raspberry PI 2~\cite{filipeflop}}
+			\label{img:raspberryPi2}
+		\end{figure}
+	%
+		As conexões, do Raspberry com outros componentes, estão descritas a seguir:
+		\begin{description}
+			\item[USB1:] Comunicação serial com o Arduino. Essa conexão será dada exclusivamente para o recebimento dos dados dos sensores, assim como um alerta de anomalia no sistema.
+			\item[USB2:] Comunicação serial com o Galileo. Essa conexão será dada para o envio dos dados dos sensores que foram recebidos a fim de avisar ao sistema de estabilização que sua ativação será necessária.
+			\item[Conector Ethernet:] Realizará a comunicação com a estação do solo. Esta conexão servirá para que tanto os dados recebidos dos sensores quanto as imagens captadas pelas câmeras sejam transmitidos até a estação de solo
+			\item[Conector Câmera:] Entrada da câmera Waveshare OV5647 Night Vision. Essa conexão servirá para a comunicação entre o Raspberry e a câmera, a fim de captar os dados transmitidos e processá-los.
+		\end{description}
+
+		Os algoritmos que serão implementados terão a função de captar os valores fornecidos em determinados pinos dos microcontroladores, seja vindo diretamente do sensor ou da comunicação serial entre os microcontroladores. Em seguida, essa informação será interpretada e comparada com os valores pré-determinados. Caso os dados obtidos desrespeitem as condições impostas nos valores pré-determinados, o microcontrolador realizará um processo. Sendo esse processo algo relacionado a autonomia do balão ou à sua comunicação com outras partes do sistema, assim como o monitoramento do seu funcionamento. Por exemplo, esse processo pode ser ativar em nível lógico alto um de seus pinos de saídas, que estarão ligados ao atuador responsável pela estabilização do balão, a fim de que este seja ligado. Esse processo também poderia ser mandar um sinal para o Raspberry para que esse possa se comunicar com a estação de solo, avisando qualquer mudança suspeita no sistema.
+
+		O Raspberry PI conterá um algoritmo que realizará a compressão dos vídeos enviados pela câmera no padrão H264.		Esse é um padrão de codificação de vídeo de última geração presente em videoconferências, bancos de dados, streaming de vídeo e TV digital, entre outros que nos permite o uso de técnicas avançadas como: esquema de previsão no qual utiliza um quadro de referência para comparação e codifica apenas os pixels que foram modificados, maior compressão de movimento, que leva em consideração que grande parte do próximo quadro pode ser encontrada no quadro anterior, porém em um lugar diferente~\cite{axis}. A compressão de vídeo é essencial porque um vídeo em seu formato original requer muito mais espaço de armazenamento e capacidade de transmissão do que o mesmo vídeo em sua forma comprimida~\cite{ostermann}.
+
+		No campo da codificação (compressso/descompressão), o padrão H.264/AVC é um dos mais modernos padrões de codificação de vídeo~\cite{sullîvan}, com uma alta taxa de compressão e diversas configurações que se ajustam a diferentes necessidades, desde o armazenamento em um disco até o streaming de vídeo~\cite{wiegard}.
+
+		À medida que a compressão se torna mais eficiente, os cálculos vão se tornando mais complexos, exigindo maior poder de processamento. Isto gera uma grande carga computacional, tornando necessário o uso de um hardware de alta capacidade para seu tratamento, o que justifica a escolha do Raspberry para o setor de processamento de imagens. Como uma forma de conseguir poder de processamento, são usadas técnicas de processamento paralelo~\cite{mattson}, na qual várias unidades de processamento trabalham em conjunto para resolver um problema. A computação paralela será utilizada na compressão do projeto, visando resolver possíveis problemas no processamento.
+
+		Um vídeo, segundo o Padrão H.264/AVC, é definido como uma sequência do mesmo em um formato particular: a sintaxe H.264/AVC. Essa sintaxe determina a estrutura precisa de uma sequência de vídeo que esteja segundo um padrão como, por exemplo, o modo de representação binária de cada elemento. A sintaxe H.264/AVC é hierárquica, sendo que o início é o seu nível mais alto, que é o nível da sequência de vídeo até o nível dos macro-blocos. Ao realizar a compressão sobre um vídeo, este se torna constituído por um fluxo de unidades NAL(Network Abstraction Layer). O SPS (Sequence Parameter Set) e o PPS (Picture Parameter Set) fazem parte da NAL, que também contém dados importantes para o decodificador. Todos os dados do vídeo serão armazenados nas unidades de tipo NAL. A sequência de vídeo é, simplesmente, um bloco NAL do tipo fatia IDR (Instantaneous Decoder Refresh) seguida por zeros ou mais NALs desse tipo~\cite{morais}. A estrutura hierárquica da sintaxe do H.264 está ilustrada na figura abaixo.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\textwidth]{figuras/h264}
+			\caption[Estrutura hierárquica da sintaxe do H.264]{Estrutura hierárquica da sintaxe do H.264. Adaptado de \citeauthoronline{richardson} (\citeyear{richardson})}
+			\label{img:estruturah264}
+		\end{figure}
